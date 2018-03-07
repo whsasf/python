@@ -9,8 +9,8 @@ attdata = str(base64.b64encode('world peace.are u OK?'.encode('utf-8')),'utf-8')
 with open(filename, 'w') as file_object:
     file_object.write(attdata)
 
-smtphost=10.49.58.239
-smtpport=20025
+smtphost = '10.49.58.239'
+smtpport = 20025
 sender = 'xx2@openwave.com'
 recievers = ['xx1@openwave.com','xx3@openwave.com']
 
@@ -43,13 +43,13 @@ Content-Disposition: attachment; filename=%s
 
 %s
 --%s--
-""" %(filename, filename, encodedcontent, marker)
+""" %(filename, filename, attdata, marker)
 message = part1 + part2 + part3
 
 
 try:
    smtpObj = smtplib.SMTP(smtphost,smtpport)
-   smtpObj.sendmail(sender, receivers, message.as_string())         
+   smtpObj.sendmail(sender, recievers, message.as_string())         
    print ("Successfully sent email")
 except smtplib.SMTPException:
    print ("Error: unable to send email")
