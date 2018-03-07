@@ -1,0 +1,74 @@
+the rule is :
+(1) if "+" exists, the user is the part before the first "+" ,the folder the the part after the first "+"
+(2) else if  "--" exists, the user is the part after "--" ,the fodler is the part before "--"
+(3) 
+
+1 these folder formats should be supported,if xx1@openwwave.com already created:
+
+xx1+@openwave.com       #goes to INBOX
+xx1+Trash@openwave.com  #to Trash folder
+xx1++++Trash@openwave.com # will create folder  +++Trash
+xx1+--Trash@openwave.com  # will create folder --Trash
+--xx1@openwave.com     #goes to INBOX
+Trash--xx1@openwave.com   #goes to trash folder
+Trash-xx1@openwave.com   #remind no "Trash-xx1" account exist
+Trash----xx1@openwave.com #will create folder Trash--
+Trash++--xx1@openwave.com #should  create folder +--xx1,if  user Trash existed
+
+xx1+test@openwave.com # goes to test folder
+xx1++++test@openwave.com #will create folder +++test
+xx1+--test@openwave.com #will create folder --test
+test--xx1@openwave.com  #goes to test folder
+test-xx1@openwave.com   #remind no "test-xx1" account exist
+test----xx1@openwave.com #will create folder  test--
+test++--xx1@openwave.com #will create folder +--xx1 ,if user test existed
+
+
+xx1+!test@openwave.com # goes to !test folder
+test!--xx1@openwave.com  #goes to test! folder
+
+xx1+'test@openwave.com # goes to 'test folder
+test'--xx1@openwave.com  #goes to test' folder
+
+xx1+'test@openwave.com # goes to 'test folder
+test'--xx1@openwave.com  #goes to test' folder
+
+
+
+"xx1+ test@openwave.com" goes to " test" folder
+
+
+xx1+\"test@openwave.com   # failed  xx1+\"test@openwave.com
+test\"--xx1@openwave.com  # failed
+
+
+xx1+tes t@openwave.com  # space not allowed exist in accouont name
+tes t--xx1@openwave.com # illigal too
+
+3 user name and folder all called xx1
+
+xx1+--xx1@openwave.com  #goes to folder --xx1
+xx1++--xx1@openwave.com  #goes to folder +--xx1
+
+xx1--+xx1@openwave.com # goes to xx1 folder if user xx1-- exist
+
+4 these folder formats (with space)should not be supported 
+
+
+
+4 display name and real name
+
+he+llo <test--xx1@openwave.com> #goes to test folder of xx1
+he--llo <test--xx1@openwave.com> #goes to test folder of xx1
+he--llo <xx1+test@openwave.com> #goes to test folder of xx1
+he+llo <xx1+test@openwave.com>  #goes to test folder of xx1
+
+5 multiple receipts:
+
+he+llo1 <xx1+test@openwave.com>
+he+llo3 <xx3+test@openwave.com>
+    #messages go to test folder of xx1 and xx3
+
+he+llo1 <teste--xx1@openwave.com>
+he+llo3 <teste--xx3@openwave.com>
+    #messages go to teste folder of xx1 and xx3
