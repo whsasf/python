@@ -2,7 +2,7 @@
 import paramiko
 #paramiko.util.log_to_file('ssh.log') # sets up logging ,disbale by default
 
-command1 = 'su - imail -c "imservping;cal;cd ..;ls -al"'
+command1 = 'su - imail -c "cat log/mta.log"'
 hostname = '10.49.58.239'
 port = 22
 username = 'root'

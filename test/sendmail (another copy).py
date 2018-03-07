@@ -6,15 +6,15 @@ import base64
 #create a attachment file
 filename = 'attach.txt'
 attdata = str(base64.b64encode('world peace.are u OK?'.encode('utf-8')),'utf-8')
-#with open(filename, 'rw') as file_object:
-#    file_object.write(attdata)
+with open(filename, 'w') as file_object:
+    file_object.write(attdata)
 
 smtphost = '10.49.58.239'
 smtpport = 20025
-sender = 'xx2 <xx2@openwave.com>'
+sender = 'xx2@openwave.com'
 recievers = ['xx1 <xx1+xyz@openwave.com>','xx3 <xx3+xyz@openwave.com>']
+
 marker = "AUNIQUEMARKER"
-mimeinfo = 'This is a multi-part message in MIME format.'
 
 body ="""
 This is a test email to send an attachement.
@@ -25,9 +25,8 @@ To: %s
 Subject: Sending Attachement
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary=%s
-%s
 --%s
-""" % (sender,','.join(recievers),marker,mimeinfo,marker)
+""" % (sender,','.join(recievers),marker, marker)
 
 # Define the message action
 part2 = """Content-Type: text/plain
