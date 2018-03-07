@@ -1,24 +1,26 @@
 #!/usr/bin/env python3
 import paramiko
+#paramiko.util.log_to_file('ssh.log') # sets up logging ,disbale by default
 
-command1 = 'ls -al'
-command2 = 'imservping'
+command1 = 'su - imail -c "imservping;cal;cd ..;ls -al"'
+hostname = '10.49.58.239'
+port = 22
+username = 'root'
+password = 'letmein'
+
+
 ssh = paramiko.SSHClient()
 
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
-ssh.connect(hostname='10.49.58.239', port=22, username='root', password='letmein')
-
+ssh.connect(hostname=hostname, port=port, username=username, password=password)
 stdin, stdout, stderr = ssh.exec_command(command1)
-#stdin, stdout, stderr = ssh.exec_command(command2)
-#stdin, stdout, stderr = ssh.exec_command('imservping')
+result = stdout.read()
 
-result2 = stdout.read()
-result3 = stderr.read()
-
-print (result2.decode('utf-8'))
-print (result3.decode('utf-8'))
-
+if len(result) == 0:  
+    print(str(stderr.read(),'utf-8'))
+else:
+    print(str(result,'utf-8'))
 
 ssh.close()
 
