@@ -12,12 +12,12 @@ attdata = str(base64.b64encode('world peace.are u OK?'.encode('utf-8')),'utf-8')
 smtphost = '10.49.58.239'
 smtpport = 20025
 sender = 'xx2 <xx2@openwave.com>'
-recievers = ['xx1 <xx1+xyz@openwave.com>','xx3 <xx3+xyz@openwave.com>']
+recievers = ['xx1 <"xx1@openwave.com">']
 marker = "AUNIQUEMARKER"
 mimeinfo = 'This is a multi-part message in MIME format.'
 
 body ="""
-This is a test email to send an attachement.
+This is a test email to send an attachement3.
 """
 # Define the main headers.
 part1 = """From: %s
