@@ -1,4 +1,9 @@
 #!/usr/bin/python3
 
-asdasdas="sdfsfsdfsdf\nsfsdfsdf\nsdfsdfsdf\nsdfsdfsdf\nsdfsdfsdfsd"
+b = 'xxxx'
+asdasdas="""sdfsfsdfsdf
+    sfsdf sdf%s
+    sdfsdf sdf
+    sdfsdf sdf
+    sdfsd fsdfsd""".replace('\n    ','\n') %b
 print (asdasdas)
