@@ -13,12 +13,11 @@ def send_mail (mtahost,mtaport,fromuser,tousers,\
     smtpport = mtaport
     sender = fromuser
     recievers = tousers
-       
-    #create a attachment file
-    filename = 'attach.txt'
+    
+    filename = 'attach.txt'  #create a attachment file
     attdata = str(base64.b64encode('world peace.are u OK?'.encode('utf-8')),'utf-8')
-    #with open(filename, 'rw') as file_object:
-    #    file_object.write(attdata)
+     #with open(filename, 'rw') as file_object:
+     #    file_object.write(attdata)
     
     # Define the main headers.
     part1 = """From: %s
@@ -47,14 +46,11 @@ def send_mail (mtahost,mtaport,fromuser,tousers,\
     --%s--
     """.replace('\n    ','\n') %(filename, filename, attdata, marker)
     message = part1 + part2 + part3
-    
-    #print (message)
-    
-    
+
     try:
        smtpObj = smtplib.SMTP(smtphost,smtpport)
        smtpObj.sendmail(sender, recievers, message)         
-       print ("Successfully sent email")
+       print ("\033[1;32m  Email sent successfully\033[0m")
     except smtplib.SMTPException:
-       print ("Error: unable to send email")
+       print ("\033[1;31m  Email sent unsuccessfully\033[0m")
     smtpObj.quit()
