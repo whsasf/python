@@ -10,10 +10,9 @@ sender = 'u2 <u2@openwave.com>'
 
 #define all the variables needed
 testcases = {
-'t1':{'casename':'MX-11124-23','receivers':['u1 <test\'--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to test\''},
-'t1':{'casename':'MX-11124-24','receivers':['u1 <tes t--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to tes t'},
+'t1':{'casename':'MX-11124-23','receivers':['u1 <"u1+te"st@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to test\''},
             }
-#set  subAddressAllowedIPs=127.0.0.1
+#set  subAddressAllowedIPs=10.37.2.214
 remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.37.2.214\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.37.2.214\""','10.49.58.239','root','letmein',0)
 
 # restart mta server

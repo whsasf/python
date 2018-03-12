@@ -32,6 +32,8 @@ testcases = {
 't12':{'casename':'MX-11987','receivers':['u1 <test--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
 't13':{'casename':'MX-11988','receivers':['u1 <test/folder--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
 't14':{'casename':'MX-11989','receivers':['u1 <test/folder/folder1/folder2/folder3--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
+'t15':{'casename':'MX-11989','receivers':['u1 <test/folder/folder1/folder2/folder3--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
+
             }
 #set  subAddressAllowedIPs=127.0.0.1
 remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=\""','10.49.58.239','root','letmein',0)
