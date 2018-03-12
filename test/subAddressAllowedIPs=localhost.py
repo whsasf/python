@@ -9,7 +9,7 @@ from modules.remote_operations import remote_operation
 #with open(sumfile, 'a') as file_object:
 #    file_object.write(attdata)
 
-mtahost = '127.0.0.1'
+mtahost = '0'
 mtaport = 20025
 sshtarget = '10.49.58.239'
 sshaccount = 'root'
