@@ -11,7 +11,7 @@ from modules.remote_operations import remote_operation
 
 mtahost = '10.49.58.239'
 mtaport = 20025
-sshtarget = '10.49.58.239'
+sshtarget = '127.0.0.1'
 sshaccount = 'root'
 sshpasswd = 'letmein'
 sender = 'u2 <u2@openwave.com>'
