@@ -9,9 +9,9 @@ from modules.remote_operations import remote_operation
 #with open(sumfile, 'a') as file_object:
 #    file_object.write(attdata)
 
-mtahost = '10.49.58.239'
+mtahost = '127.0.0.1'
 mtaport = 20025
-sshtarget = '127.0.0.1'
+sshtarget = '10.49.58.239'
 sshaccount = 'root'
 sshpasswd = 'letmein'
 sender = 'u2 <u2@openwave.com>'
