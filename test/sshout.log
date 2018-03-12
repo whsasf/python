@@ -858,3 +858,31 @@ MailboxId for u3@openwave.com is 5430142502177860571
 20180311 112302667-0400 mx1 mta 25601 26020 140091756889856 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180311152302.AAA25601.mx1.openwave.com@[127.0.1.1]>:size=929:fromhost=10.6.105.186:fromport=50070:localAddr=[10.49.58.239]:sid=AE07746B-BB59F244-00000002.1
 20180311 112302967-0400 mx1 mta 25601 26024 140091756357376 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=8843580968345168140:mss=mx2:from=<u2@openwave.com>:msgid=<20180311152302.AAA25601.mx1.openwave.com@[127.0.1.1]>:size=961:port=55014:fromhost=10.6.105.186:fromport=50070:localAddr=[10.49.58.239]:sid=AE07746B-BB59F244-00000002.1:docid=16df385a-2540-11e8-86bd-999500ee70d5:node=mx2:nodePort=55014
 20180311 112303017-0400 mx1 mta 25601 26008 140091756623616 Note;SmtpConnectionClosed(70/2) [10.6.105.186]:5:1:657:fromhost=[10.6.105.186]:fromport=50070:localAddr=10.49.58.239:sid=AE07746B-BB59F244-00000002.1
+imservctrl: stopping mta (26165)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 6046274132447402371
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 8388653078318950676
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 7922661081298234869
+20180311 200556502-0400 mx1 mta 27714 28076 140370612946688 Note;SmtpConnectionReceived(70/1) [10.6.105.186]:fromhost=10.6.105.186:fromport=51692:localAddr=10.49.58.239:sid=5F0966CE-0C160922-00000002.0
+20180311 200557361-0400 mx1 mta 27714 28076 140370612946688 Warn;UserDataException(504/1) MBX_NOT_FOUND:{uid=[tes@openwave.com], adminControl=[true], senderBlocking=[true], sharedMailbox=[true], email=[tes@openwave.com]}:MailboxService\3aGET:The given Mailbox does not exist.:Mailbox tes@openwave.com does not exist in SUR backend:user=tes@openwave.com:from=<u2@openwave.com>:fromhost=10.6.105.186:fromport=51692:localAddr=10.49.58.239:sid=5F0966CE-0C160922-00000002.1
+20180311 200557363-0400 mx1 mta 27714 28076 140370612946688 Warn;AcctUnknownUser(50/9) user=tes@openwave.com:from=<u2@openwave.com>:fromhost=10.6.105.186:fromport=51692:localAddr=10.49.58.239:sid=5F0966CE-0C160922-00000002.1
+20180311 200557949-0400 mx1 mta 27714 28076 140370612946688 Note;SmtpConnectionClosed(70/2) [10.6.105.186]:1:0:102:fromhost=10.6.105.186:fromport=51692:localAddr=10.49.58.239:sid=5F0966CE-0C160922-00000002.1
+imservctrl: stopping mta (27714)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
