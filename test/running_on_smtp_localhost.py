@@ -44,7 +44,7 @@ testcases = {
 't1':{'casename':'MX-11124-24','receivers':['u1 <tes\ t--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to tes t'},
             }
 #set  subAddressAllowedIPs=127.0.0.1
-remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\""','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.37.2.214\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.37.2.214\""','10.49.58.239','root','letmein',0)
 
 # restart mta server
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
