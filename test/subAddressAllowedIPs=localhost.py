@@ -18,11 +18,11 @@ sender = 'u2 <u2@openwave.com>'
 
 #define all the variables needed
 testcases = {
-'t1':{'casename':'MX-11003','receivers':['u1 <u1+INBOX@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
+'t1':{'casename':'MX-11003','receivers':['u1 <u1+INBOX@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to INBOX:'},
 't2':{'casename':'MX-10892','receivers':['u1 <u1+Trash@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash'},
 't3':{'casename':'MX-10893','receivers':['u1 <u1+Trash/folder@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash/folder'},
 't4':{'casename':'MX-10894','receivers':['u1 <u1+Trash/folder/folder1/folder2/folder3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash/folder/folder1/folder2/folder3'},
-'t5':{'casename':'MX-11010','receivers':['u1 <INBOX--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
+'t5':{'casename':'MX-11010','receivers':['u1 <INBOX--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to INBOX'},
 't6':{'casename':'MX-10895','receivers':['u1 <Trash--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash'},
 't7':{'casename':'MX-10896','receivers':['u1 <Trash/folder--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash/folder'},
 't8':{'casename':'MX-10897','receivers':['u1 <Trash/folder/folder1/folder2/folder3--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash/folder/folder1/folder2/folder3'},
