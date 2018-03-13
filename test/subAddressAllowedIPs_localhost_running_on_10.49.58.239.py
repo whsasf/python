@@ -58,9 +58,11 @@ testcases = {
 't38':{'casename':'MX-11235','receivers':['u1+++ <test\'---u1@openwave.com','u3+++ <test\'---u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"test'-"},
             }
 #set  subAddressAllowedIPs=127.0.0.1
-remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n114.114.114.114\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n114.114.114.114\""','10.49.58.239','root','letmein',0)
+print ("set  subAddressAllowedIPs=127.0.0.1 ...")
+remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\\n114.114.114.114\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\\n114.114.114.114\""','10.49.58.239','root','letmein',0)
 
 # restart mta server
+print ("restaing mta server ...")
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
 
 print ('Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
