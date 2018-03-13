@@ -54,15 +54,15 @@ testcases = {
 't34':{'casename':'MX-11231','receivers':['u1 <u1--+Trash@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
 't35':{'casename':'MX-11232','receivers':['u1 <test--!u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
 't36':{'casename':'MX-11233','receivers':['u1 <Trash--!u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
-'t37':{'casename':'MX-11234','receivers':['u1--- <u1++test\'@openwave.com','u3--- <u3++test\'@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"+test'"},
-'t38':{'casename':'MX-11235','receivers':['u1+++ <test\'---u1@openwave.com','u3+++ <test\'---u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"test'-"},
+'t37':{'casename':'MX-11234','receivers':['u1--- <u1++test\'@openwave.com','u3--- <u3++test\'@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"delivered to +test'"},
+'t38':{'casename':'MX-11235','receivers':['u1+++ <test\'---u1@openwave.com','u3+++ <test\'---u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"delivered to test'-"},
             }
 #set  subAddressAllowedIPs=127.0.0.1
-print ("set  subAddressAllowedIPs=127.0.0.1 ...")
-remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\\n114.114.114.114\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\\n114.114.114.114\""','10.49.58.239','root','letmein',0)
+print ("Set  subAddressAllowedIPs=127.0.0.1 ...")
+remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n1.2.3.4\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n1.2.3.4\""','10.49.58.239','root','letmein',0)
 
 # restart mta server
-print ("restaing mta server ...")
+print ("Restaing mta server ...")
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
 
 print ('Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
