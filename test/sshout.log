@@ -2173,3 +2173,226 @@ MailboxId for u3@openwave.com is 8196636277580512213
 20180312 040729599-0400 mx1 mta 21472 21832 139985583392512 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47148:localAddr=10.49.58.239:sid=45395775-DB014AF5-00000002.0
 20180312 040730407-0400 mx1 mta 21472 21832 139985583392512 Note;SmtpEmptyUserName(70/77) from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=47148:localAddr=10.49.58.239:sid=45395775-DB014AF5-00000002.1
 20180312 040730931-0400 mx1 mta 21472 21832 139985583392512 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:0:102:fromhost=10.37.2.214:fromport=47148:localAddr=10.49.58.239:sid=45395775-DB014AF5-00000002.1
+imservctrl: stopping mta (31871)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 7598073286751918490
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 9189913692929658788
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 4783225796388180064
+20180312 232058723-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47252:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000002.0
+20180312 232059991-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032059.AAA891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47252:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000002.1:msgsize=855:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232059991-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032059.AAA891.mx1.openwave.com@[127.0.1.1]>:size=921:fromhost=10.37.2.214:fromport=47252:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000002.1
+20180312 232100039-0400 mx1 mta 891 1276 139875922953984 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx1:from=<u2@openwave.com>:msgid=<20180313032059.AAA891.mx1.openwave.com@[127.0.1.1]>:size=921:port=55014:fromhost=10.37.2.214:fromport=47252:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000002.1:docid=8d5eee5c-266d-11e8-b14d-0279ee6dc082:node=mx1:nodePort=55014
+20180312 232100241-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:651:fromhost=[10.37.2.214]:fromport=47252:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000002.1
+20180312 232105488-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47256:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000004.0
+20180312 232106761-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032106.AAB891.mx1.openwave.com@[127.0.1.1]>:size=927:fromhost=10.37.2.214:fromport=47256:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000004.1
+20180312 232106762-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032106.AAB891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47256:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000004.1:msgsize=861:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232106794-0400 mx1 mta 891 1276 139875922953984 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx1:from=<u2@openwave.com>:msgid=<20180313032106.AAB891.mx1.openwave.com@[127.0.1.1]>:size=927:port=55014:fromhost=10.37.2.214:fromport=47256:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000004.1:docid=9167f430-266d-11e8-9533-f330bb186d9d:node=mx1:nodePort=55014
+20180312 232107011-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:663:fromhost=[10.37.2.214]:fromport=47256:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000004.1
+20180312 232111279-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47264:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000006.0
+20180312 232112527-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032112.AAC891.mx1.openwave.com@[127.0.1.1]>:size=951:fromhost=10.37.2.214:fromport=47264:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000006.1
+20180312 232112527-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032112.AAC891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47264:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000006.1:msgsize=885:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232112563-0400 mx1 mta 891 1276 139875922953984 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx1:from=<u2@openwave.com>:msgid=<20180313032112.AAC891.mx1.openwave.com@[127.0.1.1]>:size=951:port=55014:fromhost=10.37.2.214:fromport=47264:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000006.1:docid=94d7cbfe-266d-11e8-b9f1-e34f57ec9cbe:node=mx1:nodePort=55014
+20180312 232112769-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:711:fromhost=[10.37.2.214]:fromport=47264:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000006.1
+20180312 232117324-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47272:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000008.0
+20180312 232118577-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032118.AAD891.mx1.openwave.com@[127.0.1.1]>:size=921:fromhost=10.37.2.214:fromport=47272:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000008.1
+20180312 232118577-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032118.AAD891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47272:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000008.1:msgsize=855:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232118614-0400 mx1 mta 891 1276 139875922953984 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx1:from=<u2@openwave.com>:msgid=<20180313032118.AAD891.mx1.openwave.com@[127.0.1.1]>:size=921:port=55014:fromhost=10.37.2.214:fromport=47272:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000008.1:docid=98730576-266d-11e8-836f-3381aaa3b44a:node=mx1:nodePort=55014
+20180312 232118824-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:651:fromhost=[10.37.2.214]:fromport=47272:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000008.1
+20180312 232122513-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47278:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000A.0
+20180312 232123789-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032123.AAE891.mx1.openwave.com@[127.0.1.1]>:size=928:fromhost=10.37.2.214:fromport=47278:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000000A.1
+20180312 232123790-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032123.AAE891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47278:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000A.1:msgsize=862:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232123837-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032123.AAE891.mx1.openwave.com@[127.0.1.1]>:size=960:port=55014:fromhost=10.37.2.214:fromport=47278:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000000A.1:docid=9b8e4fd6-266d-11e8-8a56-82d17ff28e7c:node=mx2:nodePort=55014
+20180312 232124040-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:665:fromhost=[10.37.2.214]:fromport=47278:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000A.1
+20180312 232129708-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47284:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000C.0
+20180312 232130970-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032130.AAF891.mx1.openwave.com@[127.0.1.1]>:size=952:fromhost=10.37.2.214:fromport=47284:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000000C.1
+20180312 232130971-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032130.AAF891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47284:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000C.1:msgsize=886:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232131004-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032130.AAF891.mx1.openwave.com@[127.0.1.1]>:size=984:port=55014:fromhost=10.37.2.214:fromport=47284:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000000C.1:docid=9fd60c8c-266d-11e8-83f3-3fcb55e36fb7:node=mx2:nodePort=55014
+20180312 232131214-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:713:fromhost=[10.37.2.214]:fromport=47284:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000C.1
+20180312 232135486-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47292:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000E.0
+20180312 232136751-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032136.AAG891.mx1.openwave.com@[127.0.1.1]>:size=952:fromhost=10.37.2.214:fromport=47292:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000000E.1
+20180312 232136751-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032136.AAG891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47292:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000E.1:msgsize=886:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232136774-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032136.AAG891.mx1.openwave.com@[127.0.1.1]>:size=984:port=55014:fromhost=10.37.2.214:fromport=47292:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000000E.1:docid=a34816c6-266d-11e8-a81c-7fc9d65101b1:node=mx2:nodePort=55014
+20180312 232136993-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:713:fromhost=[10.37.2.214]:fromport=47292:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000000E.1
+20180312 232141311-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47302:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000010.0
+20180312 232142570-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032142.AAH891.mx1.openwave.com@[127.0.1.1]>:size=921:fromhost=10.37.2.214:fromport=47302:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000010.1
+20180312 232142571-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032142.AAH891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47302:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000010.1:msgsize=855:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232142596-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032142.AAH891.mx1.openwave.com@[127.0.1.1]>:size=953:port=55014:fromhost=10.37.2.214:fromport=47302:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000010.1:docid=a6bffb5c-266d-11e8-bd99-3fa78ee520be:node=mx2:nodePort=55014
+20180312 232142822-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:651:fromhost=[10.37.2.214]:fromport=47302:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000010.1
+20180312 232146508-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47306:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000012.0
+20180312 232147764-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032147.AAI891.mx1.openwave.com@[127.0.1.1]>:size=928:fromhost=10.37.2.214:fromport=47306:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000012.1
+20180312 232147765-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032147.AAI891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47306:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000012.1:msgsize=862:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232147785-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032147.AAI891.mx1.openwave.com@[127.0.1.1]>:size=960:port=55014:fromhost=10.37.2.214:fromport=47306:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000012.1:docid=a9d899fc-266d-11e8-88f9-f57d6a523e21:node=mx2:nodePort=55014
+20180312 232148014-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:665:fromhost=[10.37.2.214]:fromport=47306:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000012.1
+20180312 232152100-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47310:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000014.0
+20180312 232153350-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032153.AAJ891.mx1.openwave.com@[127.0.1.1]>:size=952:fromhost=10.37.2.214:fromport=47310:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000014.1
+20180312 232153351-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032153.AAJ891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47310:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000014.1:msgsize=886:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232153373-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032153.AAJ891.mx1.openwave.com@[127.0.1.1]>:size=984:port=55014:fromhost=10.37.2.214:fromport=47310:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000014.1:docid=ad2d0cc8-266d-11e8-b6f5-cbdb652c26f4:node=mx2:nodePort=55014
+20180312 232153593-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:713:fromhost=[10.37.2.214]:fromport=47310:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000014.1
+20180312 232157259-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47318:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000016.0
+20180312 232158519-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032158.AAK891.mx1.openwave.com@[127.0.1.1]>:size=922:fromhost=10.37.2.214:fromport=47318:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000016.1
+20180312 232158520-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032158.AAK891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47318:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000016.1:msgsize=856:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232158545-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032158.AAK891.mx1.openwave.com@[127.0.1.1]>:size=954:port=55014:fromhost=10.37.2.214:fromport=47318:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000016.1:docid=b041ba80-266d-11e8-b4f1-00aeb40d7f2e:node=mx2:nodePort=55014
+20180312 232158764-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:653:fromhost=[10.37.2.214]:fromport=47318:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000016.1
+20180312 232202411-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47326:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000018.0
+20180312 232203665-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032203.AAL891.mx1.openwave.com@[127.0.1.1]>:size=922:fromhost=10.37.2.214:fromport=47326:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000018.1
+20180312 232203666-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032203.AAL891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47326:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000018.1:msgsize=856:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232203694-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032203.AAL891.mx1.openwave.com@[127.0.1.1]>:size=954:port=55014:fromhost=10.37.2.214:fromport=47326:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-00000018.1:docid=b352dbbe-266d-11e8-bcd9-9659eda2a2d3:node=mx2:nodePort=55014
+20180312 232203908-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:653:fromhost=[10.37.2.214]:fromport=47326:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-00000018.1
+20180312 232207471-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47330:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001A.0
+20180312 232208729-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032208.AAM891.mx1.openwave.com@[127.0.1.1]>:size=929:fromhost=10.37.2.214:fromport=47330:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000001A.1
+20180312 232208730-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032208.AAM891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47330:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001A.1:msgsize=863:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232208760-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032208.AAM891.mx1.openwave.com@[127.0.1.1]>:size=961:port=55014:fromhost=10.37.2.214:fromport=47330:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000001A.1:docid=b6579304-266d-11e8-9e36-7df23753fc7e:node=mx2:nodePort=55014
+20180312 232208972-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:667:fromhost=[10.37.2.214]:fromport=47330:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001A.1
+20180312 232212638-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47338:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001C.0
+20180312 232213900-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032213.AAN891.mx1.openwave.com@[127.0.1.1]>:size=953:fromhost=10.37.2.214:fromport=47338:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000001C.1
+20180312 232213901-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032213.AAN891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47338:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001C.1:msgsize=887:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232213924-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032213.AAN891.mx1.openwave.com@[127.0.1.1]>:size=985:port=55014:fromhost=10.37.2.214:fromport=47338:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000001C.1:docid=b96cb006-266d-11e8-8dfb-9ad67fcdc55d:node=mx2:nodePort=55014
+20180312 232214142-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:715:fromhost=[10.37.2.214]:fromport=47338:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001C.1
+20180312 232217818-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=47342:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001E.0
+20180312 232219072-0400 mx1 mta 891 1272 139875923752704 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313032218.AAO891.mx1.openwave.com@[127.0.1.1]>:size=920:fromhost=10.37.2.214:fromport=47342:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000001E.1
+20180312 232219073-0400 mx1 mta 891 1263 139875923486464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313032218.AAO891.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=47342:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001E.1:msgsize=854:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180312 232219099-0400 mx1 mta 891 1275 139875923220224 Note;MsgTrace(65/26) delivered:user=u1@openwave.com:mbox=7598073286751918490:mss=mx2:from=<u2@openwave.com>:msgid=<20180313032218.AAO891.mx1.openwave.com@[127.0.1.1]>:size=952:port=55014:fromhost=10.37.2.214:fromport=47342:localAddr=[10.49.58.239]:sid=07FE37E2-B3C932BA-0000001E.1:docid=bc81c164-266d-11e8-bde6-357b76d169a7:node=mx2:nodePort=55014
+20180312 232219314-0400 mx1 mta 891 1263 139875923486464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:649:fromhost=[10.37.2.214]:fromport=47342:localAddr=10.49.58.239:sid=07FE37E2-B3C932BA-0000001E.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (24415)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 8885506562213066188
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 7175708832035164567
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 9057275004110008950
+20180313 014530192-0400 mx1 mta 24896 25258 139753197598464 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50886:localAddr=10.49.58.239:sid=B0E93EAE-CBAABA7D-00000002.0
+20180313 014531464-0400 mx1 mta 24896 25258 139753197598464 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313054531.AAA24896.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50886:localAddr=10.49.58.239:sid=B0E93EAE-CBAABA7D-00000002.1:msgsize=857:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180313 014531464-0400 mx1 mta 24896 25261 139753198130944 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313054531.AAA24896.mx1.openwave.com@[127.0.1.1]>:size=925:fromhost=10.37.2.214:fromport=50886:localAddr=[10.49.58.239]:sid=B0E93EAE-CBAABA7D-00000002.1
+20180313 014531501-0400 mx1 mta 24896 25266 139753197065984 Note;MsgTrace(65/26) delivered to test' folder:user=u1@openwave.com:mbox=8885506562213066188:mss=mx2:from=<u2@openwave.com>:msgid=<20180313054531.AAA24896.mx1.openwave.com@[127.0.1.1]>:size=925:port=55014:fromhost=10.37.2.214:fromport=50886:localAddr=[10.49.58.239]:sid=B0E93EAE-CBAABA7D-00000002.1:docid=bdf8bda4-2681-11e8-9dda-d0052152f14e:node=mx2:nodePort=55014
+20180313 014531708-0400 mx1 mta 24896 25258 139753197598464 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:651:fromhost=[10.37.2.214]:fromport=50886:localAddr=10.49.58.239:sid=B0E93EAE-CBAABA7D-00000002.1
+imservctrl: stopping mta (24896)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 6920009643672655466
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 5703919990535389211
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 8893081754327173865
+20180313 014648570-0400 mx1 mta 25695 26057 140120949659392 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50922:localAddr=10.49.58.239:sid=EE249E47-87A1B040-00000002.0
+20180313 014649323-0400 mx1 mta 25695 26057 140120949659392 Note;SmtpIllegalUserName(70/33) u1@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50922:localAddr=10.49.58.239:sid=EE249E47-87A1B040-00000002.1
+20180313 014649835-0400 mx1 mta 25695 26057 140120949659392 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313054649.AAA25695.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50922:localAddr=10.49.58.239:sid=EE249E47-87A1B040-00000002.1:msgsize=859:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180313 014649835-0400 mx1 mta 25695 26059 140120950191872 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313054649.AAA25695.mx1.openwave.com@[127.0.1.1]>:size=927:fromhost=10.37.2.214:fromport=50922:localAddr=[10.49.58.239]:sid=EE249E47-87A1B040-00000002.1
+20180313 014649878-0400 mx1 mta 25695 26064 140120949126912 Note;MsgTrace(65/26) delivered to te st folder:user=u1@openwave.com:mbox=6920009643672655466:mss=mx2:from=<u2@openwave.com>:msgid=<20180313054649.AAA25695.mx1.openwave.com@[127.0.1.1]>:size=927:port=55014:fromhost=10.37.2.214:fromport=50922:localAddr=[10.49.58.239]:sid=EE249E47-87A1B040-00000002.1:docid=ecaf4e60-2681-11e8-b573-8c09d5c62281:node=mx2:nodePort=55014
+20180313 014650079-0400 mx1 mta 25695 26057 140120949659392 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:655:fromhost=[10.37.2.214]:fromport=50922:localAddr=10.49.58.239:sid=EE249E47-87A1B040-00000002.1
+imservctrl: stopping mta (25695)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 8044483529625990634
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 6760454447205499785
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 6117629401913287870
+20180313 014829474-0400 mx1 mta 26546 26912 139968288556800 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50964:localAddr=10.49.58.239:sid=B81F7C21-8783A76A-00000002.0
+20180313 014830234-0400 mx1 mta 26546 26912 139968288556800 Note;SmtpEmptyUserName(70/77) from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50964:localAddr=10.49.58.239:sid=B81F7C21-8783A76A-00000002.1
+20180313 014830725-0400 mx1 mta 26546 26912 139968288556800 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:0:102:fromhost=10.37.2.214:fromport=50964:localAddr=10.49.58.239:sid=B81F7C21-8783A76A-00000002.1
+imservctrl: stopping mta (26546)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 5248110468120659680
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 8144154085756304150
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 5115653606183840975
+20180313 014944996-0400 mx1 mta 27339 27702 140717031466752 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50998:localAddr=10.49.58.239:sid=64F2BAED-EA8366A5-00000002.0
+20180313 014945749-0400 mx1 mta 27339 27702 140717031466752 Note;SmtpEmptyUserName(70/77) from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50998:localAddr=10.49.58.239:sid=64F2BAED-EA8366A5-00000002.1
+20180313 014946236-0400 mx1 mta 27339 27702 140717031466752 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:0:102:fromhost=10.37.2.214:fromport=50998:localAddr=10.49.58.239:sid=64F2BAED-EA8366A5-00000002.1
+imservctrl: stopping mta (27339)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 7504736598704763399
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 6252827129746453465
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 6246341617177520779
+20180313 015230840-0400 mx1 mta 28336 28711 140155788728064 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=51076:localAddr=10.49.58.239:sid=FB074E9C-2A96A63C-00000002.0
+20180313 015232099-0400 mx1 mta 28336 28711 140155788728064 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313055231.AAA28336.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=51076:localAddr=10.49.58.239:sid=FB074E9C-2A96A63C-00000002.1:msgsize=886:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180313 015232099-0400 mx1 mta 28336 28714 140155788994304 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313055231.AAA28336.mx1.openwave.com@[127.0.1.1]>:size=954:fromhost=10.37.2.214:fromport=51076:localAddr=[10.49.58.239]:sid=FB074E9C-2A96A63C-00000002.1
+20180313 015232136-0400 mx1 mta 28336 28719 140155788195584 Note;MsgTrace(65/26) delivered to +test' folder:user=u1@openwave.com:mbox=7504736598704763399:mss=mx2:from=<u2@openwave.com>:msgid=<20180313055231.AAA28336.mx1.openwave.com@[127.0.1.1]>:size=954:port=55014:fromhost=10.37.2.214:fromport=51076:localAddr=[10.49.58.239]:sid=FB074E9C-2A96A63C-00000002.1:docid=b8b09690-2682-11e8-92d2-b234e4773a5d:node=mx2:nodePort=55014
+20180313 015232343-0400 mx1 mta 28336 28711 140155788728064 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:681:fromhost=[10.37.2.214]:fromport=51076:localAddr=10.49.58.239:sid=FB074E9C-2A96A63C-00000002.1
+imservctrl: stopping mta (28336)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 5137687330372610103
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 8005658907329274621
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 6104093546504796902
+20180313 015423501-0400 mx1 mta 29351 29716 140210398258944 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=51132:localAddr=10.49.58.239:sid=FAB9D9EB-3B5CD8D8-00000002.0
+20180313 015425014-0400 mx1 mta 29351 29716 140210398258944 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180313055424.AAA29351.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=51132:localAddr=10.49.58.239:sid=FAB9D9EB-3B5CD8D8-00000002.1:msgsize=863:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>,<u3@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180313 015425014-0400 mx1 mta 29351 29722 140210398525184 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180313055424.AAA29351.mx1.openwave.com@[127.0.1.1]>:size=931:fromhost=10.37.2.214:fromport=51132:localAddr=[10.49.58.239]:sid=FAB9D9EB-3B5CD8D8-00000002.1
+20180313 015425057-0400 mx1 mta 29351 29728 140210397726464 Note;MsgTrace(65/26) delivered to +test' folder:user=u1@openwave.com:mbox=5137687330372610103:mss=mx2:from=<u2@openwave.com>:msgid=<20180313055424.AAA29351.mx1.openwave.com@[127.0.1.1]>:size=931:port=55014:fromhost=10.37.2.214:fromport=51132:localAddr=[10.49.58.239]:sid=FAB9D9EB-3B5CD8D8-00000002.1:docid=fbfe08d8-2682-11e8-a377-66fe33e5cec3:node=mx2:nodePort=55014
+20180313 015425073-0400 mx1 mta 29351 29728 140210397726464 Note;MsgTrace(65/26) delivered to +test' folder:user=u3@openwave.com:mbox=6104093546504796902:mss=mx2:from=<u2@openwave.com>:msgid=<20180313055424.AAA29351.mx1.openwave.com@[127.0.1.1]>:size=931:port=55014:fromhost=10.37.2.214:fromport=51132:localAddr=[10.49.58.239]:sid=FAB9D9EB-3B5CD8D8-00000002.1:docid=fbfe09fa-2682-11e8-a9bd-ea8065f12a89:node=mx2:nodePort=55014
+20180313 015425257-0400 mx1 mta 29351 29716 140210398258944 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:714:fromhost=[10.37.2.214]:fromport=51132:localAddr=10.49.58.239:sid=FAB9D9EB-3B5CD8D8-00000002.1
