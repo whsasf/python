@@ -58,24 +58,24 @@ testcases = {
 't38':{'casename':'MX-11235','receivers':['u1+++ <test\'---u1@openwave.com','u3+++ <test\'---u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"delivered to test'-"},
             }
 #set  subAddressAllowedIPs=127.0.0.1
-print ("Set  subAddressAllowedIPs=127.0.0.1 ...")
-remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n1.2.3.4\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n1.2.3.4\""','10.49.58.239','root','letmein',0)
+print ("---->Set  subAddressAllowedIPs=127.0.0.1 ...")
+remote_operation('su - imail -c "imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\""','10.49.58.239','root','letmein',0)
 
 # restart mta server
-print ("Restaing mta server ...")
+print ("---->Restaing mta server ...")
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
 
-print ('Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
+print ('---->Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
 remote_operation('su - imail -c \
   "account-delete u1@openwave.com;account-delete u2@openwave.com;account-delete u3@openwave.com"',\
   '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',3)
     
-print ('Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
+print ('---->Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
 remote_operation('su - imail -c \
   "account-create u1@openwave.com p default;account-create u2@openwave.com p default;account-create u3@openwave.com p default"',\
   '10.49.58.239','root','letmein',1,'MailboxId',3)
 
-print ('Clear mta.log firsltly ...           ',end='') #clear mta.log firstly
+print ('---->Clear mta.log firsltly ...           ',end='') #clear mta.log firstly
 remote_operation('su - imail -c "> log/mta.log"','10.49.58.239','root','letmein',0)
 
 #set quote for sender and recepients
@@ -92,7 +92,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     remote_operation(tcv['commands'],sshtarget,sshaccount,sshpasswd,1,tcv['check_flags'],sendnum)
 print ('###############Endding testing...######################') 
 
-print ('Delete u1,u2,u3 ...',end='') #delete u1,u2,u3 at last
+print ('---->Delete u1,u2,u3 ...',end='') #delete u1,u2,u3 at last
 remote_operation('su - imail -c \
   "account-delete u1@openwave.com;account-delete u2@openwave.com;account-delete u3@openwave.com"',\
   '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',3)
