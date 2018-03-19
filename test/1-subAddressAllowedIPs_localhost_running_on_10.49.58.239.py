@@ -48,7 +48,7 @@ testcases = {
 't28':{'casename':'MX-11225','receivers':['u1 <Trash----u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to Trash--'},
 't29':{'casename':'MX-11226','receivers':['u1 <!test--u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to !test'},
 't30':{'casename':'MX-11227','receivers':['u1 <test\'---u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"delivered to test'-"},
-'t31':{'casename':'MX-11228','receivers':['u1 <'te st---u1@openwave.com'>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st-'},
+'t31':{'casename':'MX-11228','receivers':['u1 <"te st---u1@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st-'},
 't32':{'casename':'MX-11229','receivers':['u1 <te\"st---u1@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st-'},
 't33':{'casename':'MX-11230','receivers':['u1 <u1--+test@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
 't34':{'casename':'MX-11231','receivers':['u1 <u1--+Trash@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
