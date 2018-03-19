@@ -2426,3 +2426,92 @@ Mailbox Created Successfully.
 MailboxId for u2@openwave.com is 7830705424122323867
 Mailbox Created Successfully.
 MailboxId for u3@openwave.com is 6014674579380754711
+imservctrl: stopping mta (1251)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 6516210223727262606
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 5710807582957615324
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 8488882722629113020
+20180319 100517578-0400 mx1 mta 4791 5144 140443124446976 Note;SmtpConnectionReceived(70/1) [127.0.0.1]:fromhost=127.0.0.1:fromport=51998:localAddr=127.0.0.1:sid=CD12AB23-1E161576-00000002.0
+20180319 100517596-0400 mx1 mta 4791 5144 140443124446976 Note;SmtpEmptyUserName(70/77) from=<u2@openwave.com>:fromhost=127.0.0.1:fromport=51998:localAddr=127.0.0.1:sid=CD12AB23-1E161576-00000002.1
+20180319 100517596-0400 mx1 mta 4791 5144 140443124446976 Note;SmtpConnectionClosed(70/2) [127.0.0.1]:0:0:105:fromhost=127.0.0.1:fromport=51998:localAddr=127.0.0.1:sid=CD12AB23-1E161576-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (4791)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 5639887786117144507
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 6554039776156624374
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 4620147833073771885
+20180319 100610262-0400 mx1 mta 5643 5994 139770499471104 Note;SmtpConnectionReceived(70/1) [127.0.0.1]:fromhost=127.0.0.1:fromport=52286:localAddr=127.0.0.1:sid=9F968361-5B03AE05-00000002.0
+20180319 100610283-0400 mx1 mta 5643 5994 139770499471104 Warn;SmtpAddressFixed(70/13) [127.0.0.1]:rcpt TO\3a<u1+te"st@openwave.com>">:<>:from=<u2@openwave.com>:fromhost=127.0.0.1:fromport=52286:localAddr=127.0.0.1:sid=9F968361-5B03AE05-00000002.1
+20180319 100610283-0400 mx1 mta 5643 5994 139770499471104 Warn;SmtpServerBadUsage(70/7) [127.0.0.1]:rcpt TO\3a<u1+te"st@openwave.com>">:from=<u2@openwave.com>:fromhost=127.0.0.1:fromport=52286:localAddr=127.0.0.1:sid=9F968361-5B03AE05-00000002.1
+20180319 100610284-0400 mx1 mta 5643 5994 139770499471104 Note;SmtpConnectionClosed(70/2) [127.0.0.1]:0:0:106:fromhost=127.0.0.1:fromport=52286:localAddr=127.0.0.1:sid=9F968361-5B03AE05-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (5643)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 6972766738873209046
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 6019995839094200878
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 8008457663858948074
+20180319 100711766-0400 mx1 mta 6529 6883 140200911292160 Note;SmtpConnectionReceived(70/1) [127.0.0.1]:fromhost=127.0.0.1:fromport=52614:localAddr=127.0.0.1:sid=1F614B35-0E9F667B-00000002.0
+20180319 100711798-0400 mx1 mta 6529 6883 140200911292160 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180319140711.AAA6529.mx1.openwave.com@[10.49.58.239]>:fromhost=[127.0.0.1]:fromport=52614:localAddr=127.0.0.1:sid=1F614B35-0E9F667B-00000002.1:msgsize=855:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180319 100711798-0400 mx1 mta 6529 6884 140200912889600 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180319140711.AAA6529.mx1.openwave.com@[10.49.58.239]>:size=925:fromhost=127.0.0.1:fromport=52614:localAddr=[127.0.0.1]:sid=1F614B35-0E9F667B-00000002.1
+20180319 100711798-0400 mx1 mta 6529 6883 140200911292160 Note;SmtpConnectionClosed(70/2) [127.0.0.1]:0:1:633:fromhost=[127.0.0.1]:fromport=52614:localAddr=127.0.0.1:sid=1F614B35-0E9F667B-00000002.1
+20180319 100711818-0400 mx1 mta 6529 6887 140200911025920 Note;MsgTrace(65/26) delivered to te> folder:user=u1@openwave.com:mbox=6972766738873209046:mss=mx1:from=<u2@openwave.com>:msgid=<20180319140711.AAA6529.mx1.openwave.com@[10.49.58.239]>:size=957:port=55014:fromhost=127.0.0.1:fromport=52614:localAddr=[127.0.0.1]:sid=1F614B35-0E9F667B-00000002.1:docid=d1a5c322-2b7e-11e8-8e71-a4b582768db7:node=mx1:nodePort=55014
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (6529)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 5893048802325474299
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 5681326434395627334
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 5211951202174579800
+20180319 100820464-0400 mx1 mta 7427 7773 140645635876608 Note;SmtpConnectionReceived(70/1) [127.0.0.1]:fromhost=127.0.0.1:fromport=52976:localAddr=127.0.0.1:sid=C08C36C6-89BCAC8E-00000002.0
+20180319 100820504-0400 mx1 mta 7427 7773 140645635876608 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180319140820.AAA7427.mx1.openwave.com@[10.49.58.239]>:fromhost=[127.0.0.1]:fromport=52976:localAddr=127.0.0.1:sid=C08C36C6-89BCAC8E-00000002.1:msgsize=855:time=0:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180319 100820504-0400 mx1 mta 7427 7777 140645635610368 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180319140820.AAA7427.mx1.openwave.com@[10.49.58.239]>:size=925:fromhost=127.0.0.1:fromport=52976:localAddr=[127.0.0.1]:sid=C08C36C6-89BCAC8E-00000002.1
+20180319 100820505-0400 mx1 mta 7427 7773 140645635876608 Note;SmtpConnectionClosed(70/2) [127.0.0.1]:0:1:633:fromhost=[127.0.0.1]:fromport=52976:localAddr=127.0.0.1:sid=C08C36C6-89BCAC8E-00000002.1
+20180319 100820530-0400 mx1 mta 7427 7781 140645635077888 Note;MsgTrace(65/26) delivered to te> folder:user=u1@openwave.com:mbox=5893048802325474299:mss=mx1:from=<u2@openwave.com>:msgid=<20180319140820.AAA7427.mx1.openwave.com@[10.49.58.239]>:size=957:port=55014:fromhost=127.0.0.1:fromport=52976:localAddr=[127.0.0.1]:sid=C08C36C6-89BCAC8E-00000002.1:docid=fa9980de-2b7e-11e8-ad0f-4c2d9d1cb24c:node=mx1:nodePort=55014
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
