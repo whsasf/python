@@ -49,8 +49,8 @@ def send_mail (mtahost,mtaport,fromuser,tousers,\
 
     try:
        smtpObj = smtplib.SMTP(smtphost,smtpport)
-       print ("recievers="+str(recievers))
-       smtpObj.sendmail(sender, str(recievers), message)         
+       #print ("recievers="+str(recievers))
+       smtpObj.sendmail(sender, recievers, message)         
        print ("\033[1;32m  Email sent successfully\033[0m")
     except smtplib.SMTPException:
        print ("\033[1;31m  Email sent unsuccessfully\033[0m")
