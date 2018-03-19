@@ -18,9 +18,9 @@ sender = 'u2 <u2@openwave.com>'
 
 #define all the variables needed
 testcases = {
-'t24':{'casename':'MX-11221','receivers':['u1 <"u1+te\"st@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st'},
-'t31':{'casename':'MX-11228','receivers':['u1 <"te st---u1@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st-'},
-'t32':{'casename':'MX-11229','receivers':['u1 <"te\"st---u1@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st-'},
+'t24':{'casename':'MX-11221','receivers':['"u1 <u1+te\"st@openwave.com>"'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st'},
+'t31':{'casename':'MX-11228','receivers':['"u1 <te st---u1@openwave.com>"'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st-'},
+'t32':{'casename':'MX-11229','receivers':['"u1 <te\"st---u1@openwave.com>"'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st-'},
            }
 #set  subAddressAllowedIPs=127.0.0.1
 print ("---->Set  subAddressAllowedIPs=127.0.0.1 ...")
