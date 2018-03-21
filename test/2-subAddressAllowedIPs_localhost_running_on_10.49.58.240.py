@@ -55,7 +55,7 @@ testcases = {
 't35':{'casename':'MX-11270','receivers':['u1 <test--!u1@openwave.com>','u3 <test--!u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
 't36':{'casename':'MX-11271','receivers':['u1 <Trash--!u1@openwave.com>','u3 <Trash--!u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'AcctUnknownUser'},
 't37':{'casename':'MX-11272','receivers':['u1--- <u1++test\'@openwave.com>','u3--- <u3++test\'>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
-'t38':{'casename':'MX-11273','receivers':['u1+++ <test\'---u1@openwave.com>','u3+++ <test\'---u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered'},
+'t38':{'casename':'MX-11273','receivers':['u1+++ <test\'---u1@openwave.com>','u3+++ <test\'---u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
 	          }
 #set  subAddressAllowedIPs=127.0.0.1
 print ("---->Set subAddressAllowedIPs=127.0.0.1 ...",end='')
