@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import turtle as t
-
 t.penup()
 t.goto(-300,100)
 t.pensize(5)
