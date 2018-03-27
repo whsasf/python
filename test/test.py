@@ -18,10 +18,8 @@ sender = 'u2 <u2@openwave.com>'
 
 #define all the variables needed
 testcases = {
-'t24':{'casename':'MX-11221','receivers':[r'u1 <"u1+te\"st@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st'},
-'t31':{'casename':'MX-11228','receivers':[r'<"te st---u1@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st-'},
-'t32':{'casename':'MX-11229','receivers':[r'<"te\"st---u1@openwave.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st-'},
-           }
+'t22':{'casename':'MX-11219','receivers':['u1 <u1+test\'@openwave.com>',r"u3 <u3+test'>"],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"delivered to test' folder"},
+          }
 #set  subAddressAllowedIPs=127.0.0.1
 print ("---->Set  subAddressAllowedIPs=127.0.0.1 ...",end='')
 remote_operation('su - imail -c "imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.37.2.214\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.37.2.214\""','10.49.58.239','root','letmein',0)

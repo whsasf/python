@@ -1,0 +1,125 @@
+imservctrl: stopping mta (1681)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 5595093067191785223
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 6069926788792569110
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 5462109658904041079
+20180326 231038276-0400 mx1 mta 5621 5989 140412662187776 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50230:localAddr=10.49.58.239:sid=F2ED0C4C-3E09E380-00000002.0
+20180326 231039281-0400 mx1 mta 5621 5989 140412662187776 Warn;UserDataException(504/1) MBX_NOT_FOUND:{uid=[u3'@openwave.com], adminControl=[true], senderBlocking=[true], sharedMailbox=[true], email=[u3'@openwave.com]}:MailboxService\3aGET:The given Mailbox does not exist.:Mailbox u3'@openwave.com does not exist in SUR backend:user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50230:localAddr=10.49.58.239:sid=F2ED0C4C-3E09E380-00000002.1
+20180326 231039281-0400 mx1 mta 5621 5989 140412662187776 Warn;AcctUnknownUser(50/9) user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50230:localAddr=10.49.58.239:sid=F2ED0C4C-3E09E380-00000002.1
+20180326 231039759-0400 mx1 mta 5621 5989 140412662187776 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180327031039.AAA5621.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50230:localAddr=10.49.58.239:sid=F2ED0C4C-3E09E380-00000002.1:msgsize=870:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180326 231039759-0400 mx1 mta 5621 5994 140412661921536 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180327031039.AAA5621.mx1.openwave.com@[127.0.1.1]>:size=937:fromhost=10.37.2.214:fromport=50230:localAddr=[10.49.58.239]:sid=F2ED0C4C-3E09E380-00000002.1
+20180326 231039789-0400 mx1 mta 5621 5997 140412661655296 Note;MsgTrace(65/26) delivered to test' folder:user=u1@openwave.com:mbox=5595093067191785223:mss=mx2:from=<u2@openwave.com>:msgid=<20180327031039.AAA5621.mx1.openwave.com@[127.0.1.1]>:size=969:port=55014:fromhost=10.37.2.214:fromport=50230:localAddr=[10.49.58.239]:sid=F2ED0C4C-3E09E380-00000002.1:docid=6d776d62-316c-11e8-81c0-bc4f1fc03e5a:node=mx2:nodePort=55014
+20180326 231039995-0400 mx1 mta 5621 5989 140412662187776 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:685:fromhost=[10.37.2.214]:fromport=50230:localAddr=10.49.58.239:sid=F2ED0C4C-3E09E380-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (5621)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 8293549672007175755
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 6577330661519856906
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 8522837185875229210
+20180326 231206793-0400 mx1 mta 6544 6927 140068526728960 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50306:localAddr=10.49.58.239:sid=425CED80-0CEC5E26-00000002.0
+20180326 231207800-0400 mx1 mta 6544 6927 140068526728960 Warn;UserDataException(504/1) MBX_NOT_FOUND:{uid=[u3'@openwave.com], adminControl=[true], senderBlocking=[true], sharedMailbox=[true], email=[u3'@openwave.com]}:MailboxService\3aGET:The given Mailbox does not exist.:Mailbox u3'@openwave.com does not exist in SUR backend:user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50306:localAddr=10.49.58.239:sid=425CED80-0CEC5E26-00000002.1
+20180326 231207800-0400 mx1 mta 6544 6927 140068526728960 Warn;AcctUnknownUser(50/9) user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50306:localAddr=10.49.58.239:sid=425CED80-0CEC5E26-00000002.1
+20180326 231208280-0400 mx1 mta 6544 6927 140068526728960 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180327031208.AAA6544.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50306:localAddr=10.49.58.239:sid=425CED80-0CEC5E26-00000002.1:msgsize=870:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180326 231208280-0400 mx1 mta 6544 6931 140068526995200 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180327031208.AAA6544.mx1.openwave.com@[127.0.1.1]>:size=937:fromhost=10.37.2.214:fromport=50306:localAddr=[10.49.58.239]:sid=425CED80-0CEC5E26-00000002.1
+20180326 231208304-0400 mx1 mta 6544 6934 140068526462720 Note;MsgTrace(65/26) delivered to test' folder:user=u1@openwave.com:mbox=8293549672007175755:mss=mx1:from=<u2@openwave.com>:msgid=<20180327031208.AAA6544.mx1.openwave.com@[127.0.1.1]>:size=969:port=55014:fromhost=10.37.2.214:fromport=50306:localAddr=[10.49.58.239]:sid=425CED80-0CEC5E26-00000002.1:docid=a23ad746-316c-11e8-993a-1d8598e48875:node=mx1:nodePort=55014
+20180326 231208518-0400 mx1 mta 6544 6927 140068526728960 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:685:fromhost=[10.37.2.214]:fromport=50306:localAddr=10.49.58.239:sid=425CED80-0CEC5E26-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (6544)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 9043796882566584030
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 8314579826880048437
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 4701088286290553076
+20180326 232118016-0400 mx1 mta 8616 8975 140609488713472 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50436:localAddr=10.49.58.239:sid=E66B1C35-C435EB6C-00000002.0
+20180326 232119002-0400 mx1 mta 8616 8975 140609488713472 Warn;UserDataException(504/1) MBX_NOT_FOUND:{uid=[u3'@openwave.com], adminControl=[true], senderBlocking=[true], sharedMailbox=[true], email=[u3'@openwave.com]}:MailboxService\3aGET:The given Mailbox does not exist.:Mailbox u3'@openwave.com does not exist in SUR backend:user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50436:localAddr=10.49.58.239:sid=E66B1C35-C435EB6C-00000002.1
+20180326 232119003-0400 mx1 mta 8616 8975 140609488713472 Warn;AcctUnknownUser(50/9) user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50436:localAddr=10.49.58.239:sid=E66B1C35-C435EB6C-00000002.1
+20180326 232119478-0400 mx1 mta 8616 8975 140609488713472 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180327032119.AAA8616.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50436:localAddr=10.49.58.239:sid=E66B1C35-C435EB6C-00000002.1:msgsize=871:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180326 232119479-0400 mx1 mta 8616 8980 140609490310912 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180327032119.AAA8616.mx1.openwave.com@[127.0.1.1]>:size=938:fromhost=10.37.2.214:fromport=50436:localAddr=[10.49.58.239]:sid=E66B1C35-C435EB6C-00000002.1
+20180326 232119509-0400 mx1 mta 8616 8983 140609488447232 Note;MsgTrace(65/26) delivered to test' folder:user=u1@openwave.com:mbox=9043796882566584030:mss=mx2:from=<u2@openwave.com>:msgid=<20180327032119.AAA8616.mx1.openwave.com@[127.0.1.1]>:size=970:port=55014:fromhost=10.37.2.214:fromport=50436:localAddr=[10.49.58.239]:sid=E66B1C35-C435EB6C-00000002.1:docid=eac4c1ba-316d-11e8-832d-b565cd66394a:node=mx2:nodePort=55014
+20180326 232119714-0400 mx1 mta 8616 8975 140609488713472 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:1:1:687:fromhost=[10.37.2.214]:fromport=50436:localAddr=10.49.58.239:sid=E66B1C35-C435EB6C-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (8616)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 6529172053971888800
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 8643505359966919631
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 9060650624008728341
+20180326 232308418-0400 mx1 mta 9588 9950 139625293260544 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50492:localAddr=10.49.58.239:sid=F61678CC-FD126F9B-00000002.0
+20180326 232309415-0400 mx1 mta 9588 9950 139625293260544 Warn;UserDataException(504/1) MBX_NOT_FOUND:{uid=[u3'@openwave.com], adminControl=[true], senderBlocking=[true], sharedMailbox=[true], email=[u3'@openwave.com]}:MailboxService\3aGET:The given Mailbox does not exist.:Mailbox u3'@openwave.com does not exist in SUR backend:user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50492:localAddr=10.49.58.239:sid=F61678CC-FD126F9B-00000002.1
+20180326 232309415-0400 mx1 mta 9588 9950 139625293260544 Warn;AcctUnknownUser(50/9) user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50492:localAddr=10.49.58.239:sid=F61678CC-FD126F9B-00000002.1
+20180326 232309891-0400 mx1 mta 9588 9950 139625293260544 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180327032309.AAA9588.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50492:localAddr=10.49.58.239:sid=F61678CC-FD126F9B-00000002.1:msgsize=870:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180326 232309891-0400 mx1 mta 9588 9954 139625294857984 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180327032309.AAA9588.mx1.openwave.com@[127.0.1.1]>:size=937:fromhost=10.37.2.214:fromport=50492:localAddr=[10.49.58.239]:sid=F61678CC-FD126F9B-00000002.1
+20180326 232309915-0400 mx1 mta 9588 9957 139625292994304 Note;MsgTrace(65/26) delivered to test' folder:user=u1@openwave.com:mbox=6529172053971888800:mss=mx2:from=<u2@openwave.com>:msgid=<20180327032309.AAA9588.mx1.openwave.com@[127.0.1.1]>:size=969:port=55014:fromhost=10.37.2.214:fromport=50492:localAddr=[10.49.58.239]:sid=F61678CC-FD126F9B-00000002.1:docid=2c949156-316e-11e8-8f32-98559bfb084c:node=mx2:nodePort=55014
+20180326 232310128-0400 mx1 mta 9588 9950 139625293260544 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:685:fromhost=[10.37.2.214]:fromport=50492:localAddr=10.49.58.239:sid=F61678CC-FD126F9B-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+imservctrl: stopping mta (9588)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 7924573540779227548
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 8130935199105396896
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 6749710569322217192
+20180326 232409736-0400 mx1 mta 10440 10802 140687206819584 Note;SmtpConnectionReceived(70/1) [10.37.2.214]:fromhost=10.37.2.214:fromport=50520:localAddr=10.49.58.239:sid=AFFC6A43-767478EF-00000002.0
+20180326 232410732-0400 mx1 mta 10440 10802 140687206819584 Warn;UserDataException(504/1) MBX_NOT_FOUND:{uid=[u3'@openwave.com], adminControl=[true], senderBlocking=[true], sharedMailbox=[true], email=[u3'@openwave.com]}:MailboxService\3aGET:The given Mailbox does not exist.:Mailbox u3'@openwave.com does not exist in SUR backend:user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50520:localAddr=10.49.58.239:sid=AFFC6A43-767478EF-00000002.1
+20180326 232410732-0400 mx1 mta 10440 10802 140687206819584 Warn;AcctUnknownUser(50/9) user=u3'@openwave.com:from=<u2@openwave.com>:fromhost=10.37.2.214:fromport=50520:localAddr=10.49.58.239:sid=AFFC6A43-767478EF-00000002.1
+20180326 232411208-0400 mx1 mta 10440 10802 140687206819584 Note;MsgTrace(65/26) received from internet:from=<u2@openwave.com>:msgid=<20180327032410.AAA10440.mx1.openwave.com@[127.0.1.1]>:fromhost=[10.37.2.214]:fromport=50520:localAddr=10.49.58.239:sid=AFFC6A43-767478EF-00000002.1:msgsize=871:time=1:sender=<u2@openwave.com>:rcpts=<u1@openwave.com>:protocol=ESMTP:encoding=plaintext:auth=
+20180326 232411208-0400 mx1 mta 10440 10806 140687207085824 Note;MsgTrace(65/26) docid will be used for message-id:user=u1@openwave.com:from=<u2@openwave.com>:msgid=<20180327032410.AAA10440.mx1.openwave.com@[127.0.1.1]>:size=939:fromhost=10.37.2.214:fromport=50520:localAddr=[10.49.58.239]:sid=AFFC6A43-767478EF-00000002.1
+20180326 232411236-0400 mx1 mta 10440 10809 140687206553344 Note;MsgTrace(65/26) delivered to test' folder:user=u1@openwave.com:mbox=7924573540779227548:mss=mx2:from=<u2@openwave.com>:msgid=<20180327032410.AAA10440.mx1.openwave.com@[127.0.1.1]>:size=971:port=55014:fromhost=10.37.2.214:fromport=50520:localAddr=[10.49.58.239]:sid=AFFC6A43-767478EF-00000002.1:docid=5120a730-316e-11e8-a682-de813440ea5d:node=mx2:nodePort=55014
+20180326 232411445-0400 mx1 mta 10440 10802 140687206819584 Note;SmtpConnectionClosed(70/2) [10.37.2.214]:2:1:685:fromhost=[10.37.2.214]:fromport=50520:localAddr=10.49.58.239:sid=AFFC6A43-767478EF-00000002.1
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
