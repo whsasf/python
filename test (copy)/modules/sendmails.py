@@ -1,7 +1,7 @@
-def send_mail (mtahost,mtaport,fromuser,tousers,cc,\
+def send_mail (mtahost,mtaport,fromuser,tousers,\
     marker = 'AUNIQUEMARKER',\
     mimeinfo = 'This is a multi-part message in MIME format.',\
-    body = '-This is a test email to send an attachement,haha,are you OK? we love world !!!!!!ucucucucucucucucucucucucucuc',\
+    body = 'This is a test email to send an attachement,haha,are you OK? we love world !!!!!!ucucucucucucucucucucucucucuc',\
     ):
     """ this function is used to send email"""
     #import basic libs
@@ -13,7 +13,7 @@ def send_mail (mtahost,mtaport,fromuser,tousers,cc,\
     smtpport = mtaport
     sender = fromuser
     recievers = tousers
-    body = str(cc)+ body
+    
     filename = 'attach.txt'  #create a attachment file
     attdata = str(base64.b64encode('world peace.are u OK?'.encode('utf-8')),'utf-8')
      #with open(filename, 'rw') as file_object:

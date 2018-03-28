@@ -18,9 +18,9 @@ sender = 'xx2 <xx2@openwave.com>'
 
 #define all the variables needed
 testcases = {
-'testcase1':{'casename':'1212','receivers':['u1 <u1+b@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to b'},
-'testcase2':{'casename':'1213','receivers':['u1 <u1+c@openwave.com>','u3 <c--u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to c'},
-'testcase3':{'casename':'1214','receivers':['u1 <u1@openwave.com>','u3 <u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
+'t1':{'casename':'1212','receivers':['u1 <u1+b@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to b'},
+'t2':{'casename':'1213','receivers':['u1 <u1+c@openwave.com>','u3 <c--u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to c'},
+'t3':{'casename':'1214','receivers':['u1 <u1@openwave.com>','u3 <u3@openwave.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
             }
 
 
@@ -42,7 +42,7 @@ remote_operation('su - imail -c "> log/mta.log"','10.49.58.239','root','letmein'
 
 print ('###############Beginning testing...######################')
 for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
-    print ('\033[1;45mRunning testing testcase: '+tck+'\033[0m')
+    print ('\033[1;45mRunning testing testcase: '+tck+'---------->'+tcv['casename']+'\033[0m')
     sendnum = len(tcv['receivers'])
     #print ('recivers numbers are:'+str(sendnum))
     print ('Sending message in proper formats ...',end='')
