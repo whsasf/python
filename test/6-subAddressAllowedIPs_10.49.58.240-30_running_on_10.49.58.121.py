@@ -44,7 +44,7 @@ testcases = {
 't24':{'casename':'MX-11411','receivers':[r'u1 <"u1+te\"st@openwave.com">',r'u3 <"u3+te\"st">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
 't25':{'casename':'MX-11412','receivers':['u1 <Trash--u1@openwave.com>','u3 <Trash--u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
 't26':{'casename':'MX-11413','receivers':['u1 <test--u1@openwave.com>','u3 <test--u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
-'t27':{'casename':'MX-11414','receivers':['u1 <test----u1@openwave.com>','u3 <test----u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':''UserDataException},
+'t27':{'casename':'MX-11414','receivers':['u1 <test----u1@openwave.com>','u3 <test----u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'UserDataException'},
 't28':{'casename':'MX-11415','receivers':['u1 <Trash----u1@openwave.com>','u3 <Trash----u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'UserDataException'},
 't29':{'casename':'MX-11416','receivers':['u1 <!test--u1@openwave.com>','u3 <!test--u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered:'},
 't30':{'casename':'MX-11417','receivers':['u1 <test\'---u1@openwave.com>','u3 <test\'---u3>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'UserDataException'},
