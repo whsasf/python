@@ -60,7 +60,7 @@ testcases = {
             }
 #set  subAddressAllowedIPs=[]
 print ("---->Set subAddressAllowedIPs=[] ...",end='')
-remote_operation('su - imail -c "imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=\""','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=\"\'','10.49.58.239','root','letmein',0)
 
 # restart mta server
 print ("---->Restarting mta server ...",end='')
