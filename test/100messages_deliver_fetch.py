@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from modules.readmessages import imap_fetch
-from modules.sendmails import send_mail
+from modules.sendmails2 import send_mail
 from modules.remote_operations import remote_operation
 import time
 
