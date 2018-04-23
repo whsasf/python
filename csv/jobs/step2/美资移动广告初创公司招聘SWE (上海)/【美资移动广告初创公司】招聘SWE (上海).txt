@@ -1,0 +1,86 @@
+发信人: chunjun (cj), 信区: Career_Upgrade 
+标  题: 【美资移动广告初创公司】招聘SWE (上海) 
+发信站: 水木社区 (Sun Apr 22 15:05:23 2018), 站内 
+  
+Software Engineer – Applications 
+Shanghai City, China 
+  
+GroundTruth is a global location technology company that drives results with real  
+data. We believe in the power of place. Build your brand, increase sales and more by  
+building off what real people are doing in the real world, mapped using our  
+proprietary Blueprints technology. GroundTruth delivers superior consumer insights  
+by seeing more people and places than anyone else, with an unrivaled first-party  
+database of 95 million active monthly users and 17 million active daily users, across  
+100 million places and points of interest. GroundTruth currently serves 21 countries  
+globally. Learn more: www.GroundTruth.com 
+  
+You will: 
+- Own and maintain the production advertising platform for daily business operation 
+- Take on-call shift to monitor the ad platform performance, and debug/fix system  
+issues, or escalate to US peers 
+- Response to on-demand requests from Ops & Sales for data reporting, by manual  
+database query and ad hoc data analysis pipelines 
+- Identify the request patterns out of the daily supporting job, and create user- 
+friendly web tools for self-service. 
+- Communicate with US/India teams for business demands specific to China market 
+- Participate in the building of highly reliable, scalable data infrastructure 
+  
+You are: 
+- BS/MS in Computer Science or equivalent 
+- 2+ years of working experience in software development 
+- Familiar with C++ or Java/Scala, with good coding style 
+- Hands-on experience in Shell (sed, awk, etc.) and Python, or other scripting  
+language 
+- Good background in data structures and algorithms 
+- Practical experience in at least 2 of the following skills: 
+o   Web framework & technology, like HTML, Bootstrap, VueJS, AngularJS, NodeJS,  
+etc. 
+o   RDBMS & NoSQL, like MySQL, PostgreSQL, MongoDB 
+o   Amazon Web Service (AWS), like S3, EC2, EMR 
+o   Big Data stack (Hadoop, Kafka, Spark, …) 
+- A passion for continuous improvement and exploring new technologies 
+- Good verbal and written communication skills 
+- Patience, good sense of responsibility 
+  
+How you can impress us: 
+- Experience in developing NodeJS/Python applications 
+- Experience in data visualization 
+- Extensive knowledge in web services 
+- Experience in online advertising 
+We are an equal opportunity employer and value diversity at our company. We do not  
+discriminate on the basis of race, religion, color, national origin, gender, sexual  
+orientation, age, marital status, veteran status, or disability status. 
+  
+补充说明： 
+#公司说明 
+- 我们是一家专注于基于地理位置的营销方案的广告技术初创公司 
+- 主要研发力量在北美，上海office正在建设中，需要能脚踏实地做事的人 
+  
+#专业要求 
+- 良好的学历背景和工作履历，比如985毕业生、著名企业工作经验 
+- 良好的计算机基础知识，包括数据结构及算法 
+- 至少熟练掌握C++ or Java/Scala 
+- 至少熟练掌握Shell及Python 
+  
+#岗位职责 
+- 参与日常的技术支持工作，响应运营和销售人员的各种需求 
+- 参与广告系统的日常维护工作 
+- 逐步参与美国的广告系统的研发任务 
+因此，需要你有较强的动手能力和解决问题的能力、有充分的耐心和责任心满足业务部 
+门的各种需求，对技术有热情、有快速学习能力去承担更有挑战的研发任务。 
+  
+#加班情况 
+- 加班较少 
+- 支持个人照顾家庭、或者不断学习新技能 
+  
+#工作地点 
+- 上海市徐汇区淮海中路 
+  
+#薪资待遇 
+- 视能力而定，硕士两年平均年薪25-30w, 能力更好的还可以上调 
+- 原始期权，未来3年内大概率能兑现 
+  
+#联系方式 
+发送pdf简历至chunjun.xiao `at` hotmail.com 
+（合适的话3天之内联系；工作较忙、恕不一一回复） 
+  
