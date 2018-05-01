@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
 
-def ite():
-    print('hello')
-    yield 'test1'
-    print('world')
-    yield 'test2'
-    yield 'test3'
-    yield 'test4'
-
-gen = ite()   #
-print(type(gen))
-print(gen.__next__())
-print(gen.__next__())
-print(gen.__next__())
-print(gen.__next__())
-
-
-
+def test1():
+    while True:
+        print("--1--")
+        yield None
+def test2():
+    while True:
+        print("--2--")
+        yield None
+t1 = test1()
+t2 = test2()
+while True:
+    t1.__next__()
+    t2.__next__()
