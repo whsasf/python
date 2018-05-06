@@ -28,7 +28,7 @@ def remote_operation(cmds,sshhost,user,passwd,checkyns,\
     if checkyn == 1:
         if len(okout) == 0:  
             out=str(errout,'utf-8')
-            #print(out,end='')
+            print(out,end='')
             #write error log to file
             with open(errorlog,'a') as file_object_err:
                 file_object_err.write(out)
@@ -38,7 +38,7 @@ def remote_operation(cmds,sshhost,user,passwd,checkyns,\
                 print ('\033[1;31m  Operation failed,no need to continue,please check'+errorlog+'!\033[0m')
         else:
             out=str(okout,'utf-8')
-            #print(out,end='')
+            print(out,end='')
             #write out log to file
             with open(outlog,'a') as file_object_ok:
                 file_object_ok.write(out)
