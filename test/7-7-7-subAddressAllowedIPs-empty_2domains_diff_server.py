@@ -95,7 +95,7 @@ remote_operation('su - imail -c \
 
 remote_operation('su - imail -c \
   "imdbcontrol cd bigworld.com local;account-create u1@bigworld.com p default;account-create u3@bigworld.com p default"',\
-  '10.49.58.239','root','letmein',1,'MailboxId',2)
+  '10.49.58.130','root','letmein',1,'MailboxId',2)
   
 
 print ('---->Clear mta.log firsltly ...           ',end='') #clear mta.log firstly
