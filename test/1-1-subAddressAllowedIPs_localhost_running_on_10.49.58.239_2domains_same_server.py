@@ -69,7 +69,7 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/relaySour
 # restart mta server
 print ("---->Restarting mta server ...",end='')
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
-time.sleep(1)
+time.sleep(5)
 
 print ('---->Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
 remote_operation('su - imail -c \
