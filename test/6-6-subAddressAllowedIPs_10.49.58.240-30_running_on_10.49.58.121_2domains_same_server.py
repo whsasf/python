@@ -65,6 +65,9 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddres
 print ("---->Set  relaySourcePolicy=allowALL ...",end='')
 remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/relaySourcePolicy=allowAll";imconfcontrol -install -key \"/inbound-standardmta-direct/mta/relaySourcePolicy=allowAll\"\'','10.49.58.239','root','letmein',0)
 
+#set smtprelaytabl
+print ("---->Set  smtprelay...",end='')
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/mailRoutingTable=bigchina.com:10.49.58.239#20025";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/mailRoutingTable=bigchina.com:10.49.58.239#20025\"\'','10.49.58.239','root','letmein',0)
 
 
 # restart mta server
