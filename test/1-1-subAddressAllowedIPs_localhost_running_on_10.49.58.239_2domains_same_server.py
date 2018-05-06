@@ -92,7 +92,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     remote_operation(tcv['commands'],sshtarget,sshaccount,sshpasswd,1,tcv['check_flags'],sendnum)
 print ('###############Endding testing...######################') 
 
-print ('---->Delete u1,u2,u3 ...',end='') #delete u1,u2,u3 at last
-remote_operation('su - imail -c \
-  "account-delete u1@openwave.com;account-delete u2@openwave.com;account-delete u3@bigchina.com;imdbcontrol dd bigchina.com"',\
-  '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',3)
+#print ('---->Delete u1,u2,u3 ...',end='') #delete u1,u2,u3 at last
+#remote_operation('su - imail -c \
+#  "account-delete u1@openwave.com;account-delete u2@openwave.com;account-delete u3@bigchina.com;imdbcontrol dd bigchina.com"',\
+#  '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',3)
