@@ -61,6 +61,11 @@ testcases = {
 print ("---->Set subAddressAllowedIPs=127.0.0.1 ...",end='')
 remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n8.8.8.8\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n8.8.8.8\"\'','10.49.58.239','root','letmein',0)
 
+#set relaySourcePolicy
+print ("---->Set  relaySourcePolicy=allowALL ...",end='')
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/relaySourcePolicy=allowAll";imconfcontrol -install -key \"/inbound-standardmta-direct/mta/relaySourcePolicy=allowAll\"\'','10.49.58.239','root','letmein',0)
+
+
 # restart mta server
 print ("---->Restarting mta server ...",end='')
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
