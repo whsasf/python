@@ -74,7 +74,7 @@ time.sleep(5)
 
 print ('---->Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
 remote_operation('su - imail -c \
-  "account-delete u1@openwave.com;account-delete u2@openwave.com;account-delete u3@bigchina.com"',\
+  "account-delete u1@openwave.com;account-delete u2@openwave.com;account-delete u3@bigchina.com;imdbcontrol dd bigchina.com"',\
   '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',3)
     
 print ('---->Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
