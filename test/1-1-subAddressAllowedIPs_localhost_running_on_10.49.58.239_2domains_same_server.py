@@ -72,7 +72,7 @@ remote_operation('su - imail -c \
     
 print ('---->Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
 remote_operation('su - imail -c \
-  "imdbcontrol cd bigchina.com l;account-create u1@openwave.com p default;account-create u2@openwave.com p default;account-create u3@bigchina.com p default"',\
+  "imdbcontrol cd bigchina.com local;account-create u1@openwave.com p default;account-create u2@openwave.com p default;account-create u3@bigchina.com p default"',\
   '10.49.58.239','root','letmein',1,'MailboxId',3)
 
 print ('---->Clear mta.log firsltly ...           ',end='') #clear mta.log firstly
