@@ -84,7 +84,7 @@ remote_operation('su - imail -c \
   
 remote_operation('su - imail -c \
   "account-delete u1@bigworld.com;account-delete u3@bigworld.com;imdbcontrol dd bigworld.com"',\
-  '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',2)
+  '10.49.58.130','root','letmein',1,'Mailbox Deleted Successfully',2)
   
     
 print ('---->Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
