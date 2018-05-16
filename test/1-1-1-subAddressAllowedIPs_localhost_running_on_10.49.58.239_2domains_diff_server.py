@@ -14,7 +14,7 @@ mtaport = 20025
 sshtarget = '10.49.58.130'
 sshaccount = 'root'
 sshpasswd = 'letmein'
-sender = 'u2 <u2@openwave.com>'
+sender = 'u2 <u2@whsasf.com>'
 
 #define all the variables needed
 testcases = {
@@ -79,7 +79,7 @@ time.sleep(5)
 
 print ('---->Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
 remote_operation('su - imail -c \
-  "account-delete u2@openwave.com"',\
+  "account-delete u2@whsasf.com;imdbcontrol dd whsasf.com"',\
   '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',1)
   
 remote_operation('su - imail -c \
@@ -89,7 +89,7 @@ remote_operation('su - imail -c \
     
 print ('---->Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
 remote_operation('su - imail -c \
-  "account-create u2@openwave.com p default"',\
+  "imdbcontrol cd whsasf.com local;account-create u2@whsasf.com p default"',\
   '10.49.58.239','root','letmein',1,'MailboxId',1)
 
 remote_operation('su - imail -c \
@@ -120,5 +120,5 @@ remote_operation('su - imail -c \
   "account-delete u1@bigworld.com;account-delete u3@bigworld.com;imdbcontrol dd bigworld.com"',\
   '10.49.58.130','root','letmein',1,'Mailbox Deleted Successfully',2)
 remote_operation('su - imail -c \
-  "account-delete u2@openwave.com"',\
+  "account-delete u2@whsasf.com"',\
   '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',1)
