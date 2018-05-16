@@ -57,9 +57,14 @@ testcases = {
 't37':{'casename':'MX-11234','receivers':['u1--- <u1++test\'@bigworld.com>','u3--- <u3++test\'@bigworld.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"delivered to +test' folder"},
 't38':{'casename':'MX-11235','receivers':['u1+++ <test\'---u1@bigworld.com>','u3+++ <test\'---u3@bigworld.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':"UserDataException"},
             }
-#set  subAddressAllowedIPs=127.0.0.1
+#set  subAddressAllowedIPs=127.0.0.1/10.49.58.239  on source server
 print ("---->Set  subAddressAllowedIPs=127.0.0.1 ...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n8.8.8.8\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n8.8.8.8\"\'','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n10.49.58.239\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n10.49.58.239\"\'','10.49.58.239','root','letmein',0)
+
+#set  subAddressAllowedIPs=127.0.0.1/10.49.58.239  on dest serevr
+print ("---->Set  subAddressAllowedIPs=127.0.0.1 ...",end='')
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n10.49.58.239\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n10.49.58.239\"\'','10.49.58.130','root','letmein',0)
+
 
 #set relaySourcePolicy
 print ("---->Set  relaySourcePolicy=allowALL ...",end='')
