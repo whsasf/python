@@ -59,7 +59,7 @@ testcases = {
 	          }
 #set  subAddressAllowedIPs=127.0.0.1
 print ("---->Set subAddressAllowedIPs=127.0.0.1 ...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n8.8.8.8\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n8.8.8.8\"\'','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=127.0.0.1\n10.49.58.239\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=127.0.0.1\n10.49.58.239\"\'','10.49.58.239','root','letmein',0)
 
 #set relaySourcePolicy
 print ("---->Set  relaySourcePolicy=allowALL ...",end='')
@@ -74,6 +74,9 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/mailRouti
 # restart mta server
 print ("---->Restarting mta server ...",end='')
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
+print ("---->Restarting mta server ...",end='')
+remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.130','root','letmein',1,'imservctrl: done',1)
+
 time.sleep(5)
 
 print ('---->Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
@@ -109,7 +112,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     #print ('recivers numbers are:'+str(sendnum))
     print ('Sending message in proper formats ...',end='')
     send_mail(mtahost,mtaport,sender,tcv['receivers'])
-    time.sleep(7)
+    time.sleep(10)
     print ('Checking mta.log ...                 ',end='')
     remote_operation(tcv['commands'],sshtarget,sshaccount,sshpasswd,1,tcv['check_flags'],sendnum)
 print ('###############Endding testing...######################') 
