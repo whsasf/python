@@ -893,7 +893,19 @@ Mailbox Deleted Successfully.
 
 Mailbox Deleted Successfully. 
 
-imservctrl: stopping mta (30421)
+imservctrl: stopping mta (14098)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 7790281734802372593
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 7564039006623447223
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 7011907567661267970
+imservctrl: stopping mta (27752)
 imservctrl: cleaning /opt/imail/tmp ...
 mta -nosnmp
 imservctrl: starting mta -nosnmp
@@ -906,8 +918,44 @@ Mailbox Deleted Successfully.
 Mailbox Deleted Successfully. 
 
 Mailbox Created Successfully.
-MailboxId for u1@openwave.com is 7351664770326385296
+MailboxId for u1@openwave.com is 7115126088391204506
 Mailbox Created Successfully.
-MailboxId for u2@openwave.com is 6654573372679245467
+MailboxId for u2@openwave.com is 7432884757915145929
 Mailbox Created Successfully.
-MailboxId for u3@openwave.com is 5182356849600414992
+MailboxId for u3@openwave.com is 8488584173536681797
+imservctrl: stopping mta (28653)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 8158656226184780499
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 4857397507708447049
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 5172546607167766253
+imservctrl: stopping mta (29562)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+
+Mailbox Created Successfully.
+MailboxId for u1@openwave.com is 8215672450620049848
+Mailbox Created Successfully.
+MailboxId for u2@openwave.com is 4946221302169655325
+Mailbox Created Successfully.
+MailboxId for u3@openwave.com is 6735898109318259938

@@ -1,0 +1,3 @@
+'MX-11003',['u1 <u1+INBOX@openwave.com>','u3 <u3+INBOX>'],'su - imail -c "cat log/mta.log;> log/mta.log"','delivered to INBOX folder'   
+'MX-10892',['u1 <u1+Trash@openwave.com>','u3 <u3+Trash>'],'su - imail -c "cat log/mta.log;> log/mta.log"','delivered to Trash folder'
+'MX-10893',['u1 <u1+Trash/folder@openwave.com>','u3 <u3+Trash/folder>'],'su - imail -c "cat log/mta.log;> log/mta.log"','delivered to Trash/folder folder'

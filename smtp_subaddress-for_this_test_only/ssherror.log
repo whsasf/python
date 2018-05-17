@@ -1,0 +1,104 @@
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_UNABLE_TO_DELETE
+Short Message: Unable to perform Mailbox DELETE operation.
+Long message: Could not connect to mss on host cluster01
+ERROR: Unable to delete the mailbox
+Error Code: MBX_UNABLE_TO_DELETE
+Short Message: Unable to perform Mailbox DELETE operation.
+Long message: Could not connect to mss on host cluster01
+ERROR: Unable to perform mailbox creation operation
+Error Code: MBX_ALREADY_EXISTS
+Short Message: The given Mailbox is already exists.
+Long message: [LDAP: error code 68 - Entry Already Exists]
+ERROR: Unable to perform mailbox creation operation
+Error Code: MBX_ALREADY_EXISTS
+Short Message: The given Mailbox is already exists.
+Long message: [LDAP: error code 68 - Entry Already Exists]
+ERROR: Unable to delete the mailbox
+Error Code: MBX_UNABLE_TO_DELETE
+Short Message: Unable to perform Mailbox DELETE operation.
+Long message: Could not connect to mss on host cluster01
+ERROR: Unable to delete the mailbox
+Error Code: MBX_UNABLE_TO_DELETE
+Short Message: Unable to perform Mailbox DELETE operation.
+Long message: Could not connect to mss on host cluster01
+ERROR: Unable to perform mailbox creation operation
+Error Code: MBX_ALREADY_EXISTS
+Short Message: The given Mailbox is already exists.
+Long message: [LDAP: error code 68 - Entry Already Exists]
+ERROR: Unable to perform mailbox creation operation
+Error Code: MBX_ALREADY_EXISTS
+Short Message: The given Mailbox is already exists.
+Long message: [LDAP: error code 68 - Entry Already Exists]
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
