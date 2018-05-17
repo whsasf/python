@@ -96,7 +96,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     print ('---->run imrecalcmboxstats for u1 ...           ',end='')
     remote_operation("su - imail -c \"msgid=\$(imboxstats u1@openwave.com|grep Statistics|awk '{print \$5}');echo \$msgid >xx.txt;imrecalcmboxstats mx1 repair \$msgid ''\"",'10.49.58.239','root','letmein',0)
     print ('---->run imrecalcmboxstats for u3 ...           ',end='')
-    remote_operation("su - imail -c \"msgid=\$(imboxstats u3@bigworld.com|grep Statistics|awk '{print \$5}');echo \$msgid >xx.txt;imrecalcmboxstats mx1 repair \$msgid ''\"",'10.49.58.239','root','letmein',0)
+    remote_operation("su - imail -c \"msgid=\$(imboxstats u3@bigchina.com|grep Statistics|awk '{print \$5}');echo \$msgid >xx.txt;imrecalcmboxstats mx1 repair \$msgid ''\"",'10.49.58.239','root','letmein',0)
 
     print ('\033[1;45mRunning testing testcase: '+tck+'---------->'+tcv['casename']+'\033[0m')
     sendnum = len(tcv['receivers'])
