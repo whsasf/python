@@ -94,7 +94,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     sendnum = len(tcv['receivers'])
     #print ('recivers numbers are:'+str(sendnum))
     print ('Sending message in proper formats ...',end='')
-    
+    time.sleep(2)
     send_mail(mtahost,mtaport,sender,tcv['receivers'])
     print ('Checking mta.log ...                 ',end='')
     remote_operation(tcv['commands'],sshtarget,sshaccount,sshpasswd,1,tcv['check_flags'],sendnum)

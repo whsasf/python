@@ -11,7 +11,7 @@ import time
 
 mtahost = '127.0.0.1'
 mtaport = 20025
-sshtarget = '10.49.58.130'
+sshtarget = '10.49.58.121'
 sshaccount = 'root'
 sshpasswd = 'letmein'
 sender = 'u2 <u2@whsasf.com>'

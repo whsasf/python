@@ -74,7 +74,7 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/relaySour
 # restart mta server
 print ("---->Restarting mta server ...",end='')
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
-
+time.sleep(5)
 
 print ('---->Delete u1,u2,u3 if already existed...',end='') #delete u1,u2,u3 if exists
 remote_operation('su - imail -c \
@@ -89,17 +89,11 @@ remote_operation('su - imail -c \
 print ('---->Clear mta.log firsltly ...           ',end='') #clear mta.log firstly
 remote_operation('su - imail -c "> log/mta.log"','10.49.58.239','root','letmein',0)
 
-time.sleep(10)
 #set quote for sender and recepients
 #ssdsdsd
 
 print ('###############Beginning testing...######################')
 for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
-    print ('---->run imrecalcmboxstats for u1 ...           ',end='')
-    remote_operation("su - imail -c \"msgid=\$(imboxstats u1@openwave.com|grep Statistics|awk '{print \$5}');echo \$msgid >xx.txt;imrecalcmboxstats mx1 repair \$msgid ''\"",'10.49.58.239','root','letmein',0)
-    print ('---->run imrecalcmboxstats for u3 ...           ',end='')
-    remote_operation("su - imail -c \"msgid=\$(imboxstats u3@bigchina.com|grep Statistics|awk '{print \$5}');echo \$msgid >xx.txt;imrecalcmboxstats mx1 repair \$msgid ''\"",'10.49.58.239','root','letmein',0)
-
     print ('\033[1;45mRunning testing testcase: '+tck+'---------->'+tcv['casename']+'\033[0m')
     sendnum = len(tcv['receivers'])
     #print ('recivers numbers are:'+str(sendnum))
