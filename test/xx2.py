@@ -18,7 +18,7 @@ sender = 'u2 <u2@whsasf.com>'
 
 #define all the variables needed
 testcases = {
-'t23':{'casename':'MX-11296','receivers':['u1 <"u1+te st@bigworld.com">','u3 <"u3+te st@bigworld.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st folder'},
+'t23':{'casename':'MX-11296','receivers':[r'u1 <"u1+te st@bigworld.com">','u3 <"u3+te st@bigworld.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te st folder'},
 't24':{'casename':'MX-11297','receivers':[r'u1 <"u1+te\"st@bigworld.com">',r'u3 <"u3+te\"st@bigworld.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'delivered to te"st folder'},
 't32':{'casename':'MX-11305','receivers':[r'u1 <"te\"st---u1@bigworld.com">',r'u3 <"te\"st---u3@bigworld.com">'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'UserDataException'},
            }
@@ -79,7 +79,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     #print ('recivers numbers are:'+str(sendnum))
     print ('Sending message in proper formats ...',end='')
     send_mail(mtahost,mtaport,sender,tcv['receivers'])
-    time.sleep(8)
+    time.sleep(10)
     print ('Checking mta.log ...                 ',end='')
     remote_operation(tcv['commands'],sshtarget,sshaccount,sshpasswd,1,tcv['check_flags'],sendnum)
 print ('###############Endding testing...######################') 
