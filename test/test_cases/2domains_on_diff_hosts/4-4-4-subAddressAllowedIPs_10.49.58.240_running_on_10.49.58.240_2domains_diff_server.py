@@ -58,8 +58,8 @@ testcases = {
 't38':{'casename':'MX-11349','receivers':['u1+++ <test\'---u1@bigworld.com>','u3+++ <test\'---u3@bigworld.com>'],'commands':'su - imail -c "cat log/mta.log;> log/mta.log"','check_flags':'UserDataException'},
 	          }
 #set  subAddressAllowedIPs=10.49.58.240
-#print ("---->Set subAddressAllowedIPs=[] on source mta ...",end='')
-#remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=\"\'','10.49.58.239','root','letmein',0)
+print ("---->Set subAddressAllowedIPs=[] on source mta ...",end='')
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.240\n8.8.8.8\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.240\n8.8.8.8\"\'','10.49.58.239','root','letmein',0)
 
 print ("---->Set subAddressAllowedIPs=10.49.58.240 on dest mta ...",end='')
 remote_operation('su - imail -c \'imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.240\n8.8.8.8\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.240\n8.8.8.8\"\'','10.49.58.121','root','letmein',0)
