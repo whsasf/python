@@ -911,3 +911,11 @@ Mailbox Created Successfully.
 MailboxId for u2@openwave.com is 6654573372679245467
 Mailbox Created Successfully.
 MailboxId for u3@openwave.com is 5182356849600414992
+imservctrl: stopping mta (12922)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Please login as the user "op-user" rather than the user "root".
+
