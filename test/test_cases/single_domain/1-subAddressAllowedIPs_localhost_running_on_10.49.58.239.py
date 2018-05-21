@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from ../modules.sendmails import send_mail
-from ../modules.remote_operations import remote_operation
+from modules.sendmails import send_mail
+from modules.remote_operations import remote_operation
 
 #reate summary file and debug files:
 #sumfile = 'sumary.log'
