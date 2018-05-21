@@ -110,6 +110,7 @@ remote_operation('su - imail -c "> log/mta.log"','10.49.58.121','root','letmein'
 #set quote for sender and recepients
 #ssdsdsd
 
+time.sleep(30)
 print ('###############Beginning testing...######################')
 for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     print ('\033[1;45mRunning testing testcase: '+tck+'---------->'+tcv['casename']+'\033[0m')
@@ -117,7 +118,7 @@ for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     #print ('recivers numbers are:'+str(sendnum))
     print ('Sending message in proper formats ...',end='')
     send_mail(mtahost,mtaport,sender,tcv['receivers'])
-    time.sleep(7)
+    time.sleep(8)
     print ('Checking mta.log ...                 ',end='')
     remote_operation(tcv['commands'],sshtarget,sshaccount,sshpasswd,1,tcv['check_flags'],sendnum)
 print ('###############Endding testing...######################') 
