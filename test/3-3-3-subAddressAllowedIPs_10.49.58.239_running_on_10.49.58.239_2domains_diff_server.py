@@ -106,7 +106,7 @@ remote_operation('su - imail -c "> log/mta.log"','10.49.58.121','root','letmein'
 
 #set quote for sender and recepients
 #ssdsdsd
-time.sleep(5)
+time.sleep(30)
 print ('###############Beginning testing...######################')
 for tck ,tcv in sorted(testcases.items(),key=lambda testcases:testcases[0]):
     print ('\033[1;45mRunning testing testcase: '+tck+'---------->'+tcv['casename']+'\033[0m')
