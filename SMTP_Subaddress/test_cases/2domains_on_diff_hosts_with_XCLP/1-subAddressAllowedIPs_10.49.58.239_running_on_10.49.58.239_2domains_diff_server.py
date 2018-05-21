@@ -70,8 +70,14 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/relaySour
 
 #set smtprelaytabl
 print ("---->Set  smtprelay...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/mailRoutingTable=bigworld.com:10.49.58.121#20025";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/mailRoutingTable=bigworld.com:10.49.58.121#20025\"\'','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/mailRoutingTable=bigworld.com:10.49.58.121#20025\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/mailRoutingTable=bigworld.com:10.49.58.121#20025\"\'','10.49.58.239','root','letmein',0)
 
+#set xclp
+print ("---->Set  xclp on source mta ...",end='')
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/common/allowXCLP=true\";imconfcontrol -install -key \"/*/improxy/sendClientIp=true\";imconfcontrol -install -key \"/*/common/xclpAllowedIPs=10.37.2.214\";imconfcontrol -install -key \"/*/mta/allowXCLP=true\";imconfcontrol -install -key \"/*/mta/enableOutboundXCLP=true\";imconfcontrol -install -key \"/*/mta/outboundXCLPExpectsReply=true\";imconfcontrol -install -key \"/*/mta/XclpAllowedIPs=10.37.2.214\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/XclpAllowedIPs=10.37.2.214\";imconfcontrol -install -key \"/inbound-standardmta-direct/mta/allowXCLP=true\";imconfcontrol -install -key \"/inbound-standardmta-direct/mta/enableOutboundXCLP=true\"\'','10.49.58.239','root','letmein',0)
+
+print ("---->Set  xclp on dest mta  ...",end='')
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/common/allowXCLP=true\";imconfcontrol -install -key \"/*/improxy/sendClientIp=true\";imconfcontrol -install -key \"/*/common/xclpAllowedIPs=10.49.58.239\";imconfcontrol -install -key \"/*/mta/allowXCLP=true\";imconfcontrol -install -key \"/*/mta/enableOutboundXCLP=true\";imconfcontrol -install -key \"/*/mta/outboundXCLPExpectsReply=true\";imconfcontrol -install -key \"/*/mta/XclpAllowedIPs=10.49.58.239\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/XclpAllowedIPs=10.49.58.239\";imconfcontrol -install -key \"/inbound-standardmta-direct/mta/allowXCLP=true\";imconfcontrol -install -key \"/inbound-standardmta-direct/mta/enableOutboundXCLP=true\"\'','10.49.58.121','root','letmein',0)
 
 
 # restart mta server
