@@ -11,7 +11,7 @@ import time
 
 mtahost = '10.49.58.239'
 mtaport = 20025
-sshtarget = '10.49.58.121'
+sshtarget = '10.49.58.147'
 sshaccount = 'root'
 sshpasswd = 'letmein'
 sender = 'u2 <u2@whsasf.com>'
@@ -59,10 +59,10 @@ testcases = {
 	          }
 #set  subAddressAllowedIPs=10.49.58.240/30
 print ("---->Set subAddressAllowedIPs=10.49.58.240/30 on source mta ...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.121\n8.8.8.8\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.121\n8.8.8.8\"\'','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.147\n8.8.8.8\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.147\n8.8.8.8\"\'','10.49.58.239','root','letmein',0)
 
 print ("---->Set subAddressAllowedIPs=10.49.58.240/30 on dest mta  ...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.240/30\n8.8.8.8\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.240/30\n8.8.8.8\"\'','10.49.58.121','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.240/30\n8.8.8.8\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.240/30\n8.8.8.8\"\'','10.49.58.147','root','letmein',0)
 
 
 #set relaySourcePolicy
@@ -71,7 +71,7 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/relaySour
 
 #set smtprelaytabl
 print ("---->Set  smtprelay...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/mailRoutingTable=bigworld.com:10.49.58.121#20025";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/mailRoutingTable=bigworld.com:10.49.58.121#20025\"\'','10.49.58.239','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/mailRoutingTable=bigworld.com:10.49.58.147#20025";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/mailRoutingTable=bigworld.com:10.49.58.147#20025\"\'','10.49.58.239','root','letmein',0)
 
 
 
@@ -80,7 +80,7 @@ print ("---->Restarting mta server ...",end='')
 remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.239','root','letmein',1,'imservctrl: done',1)
 
 print ("---->Restarting mta server ...",end='')
-remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.121','root','letmein',1,'imservctrl: done',1)
+remote_operation('su - imail -c "~/lib/imservctrl killStart mta"', '10.49.58.147','root','letmein',1,'imservctrl: done',1)
 
 time.sleep(5)
 
@@ -91,7 +91,7 @@ remote_operation('su - imail -c \
   
 remote_operation('su - imail -c \
   "account-delete u1@bigworld.com;account-delete u3@bigworld.com;imdbcontrol dd bigworld.com"',\
-  '10.49.58.121','root','letmein',1,'Mailbox Deleted Successfully',2)
+  '10.49.58.147','root','letmein',1,'Mailbox Deleted Successfully',2)
   
     
 print ('---->Create u1,u2,u3 ...                  ',end='') #creaet account u1,u2,u3
@@ -101,11 +101,11 @@ remote_operation('su - imail -c \
 
 remote_operation('su - imail -c \
   "imdbcontrol cd bigworld.com local;account-create u1@bigworld.com p default;account-create u3@bigworld.com p default"',\
-  '10.49.58.121','root','letmein',1,'MailboxId',2)
+  '10.49.58.147','root','letmein',1,'MailboxId',2)
   
 
 print ('---->Clear mta.log firsltly ...           ',end='') #clear mta.log firstly
-remote_operation('su - imail -c "> log/mta.log"','10.49.58.121','root','letmein',0)
+remote_operation('su - imail -c "> log/mta.log"','10.49.58.147','root','letmein',0)
 
 #set quote for sender and recepients
 #ssdsdsd
@@ -126,7 +126,7 @@ print ('###############Endding testing...######################')
 print ('---->Delete u1,u2,u3 ...',end='') #delete u1,u2,u3 at last
 remote_operation('su - imail -c \
   "account-delete u1@bigworld.com;account-delete u3@bigworld.com;imdbcontrol dd bigworld.com"',\
-  '10.49.58.121','root','letmein',1,'Mailbox Deleted Successfully',2)
+  '10.49.58.147','root','letmein',1,'Mailbox Deleted Successfully',2)
 remote_operation('su - imail -c \
   "account-delete u2@whsasf.com"',\
   '10.49.58.239','root','letmein',1,'Mailbox Deleted Successfully',1)

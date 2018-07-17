@@ -1,0 +1,21 @@
+imservctrl: stopping mta (21373)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+imservctrl: stopping mta (22307)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Mailbox Created Successfully.
+MailboxId for u1@bigworld.com is 5482318944085437165
+Mailbox Created Successfully.
+MailboxId for u3@bigworld.com is 8680650408140974583
+20180717 014904645-0400 scality2 mta 17385 17513 140698560132864 Note;MtaQueueDirRemoved(79/54) /opt/imail/spool/deferred/MTA
+Mailbox Deleted Successfully. 
+
+Mailbox Deleted Successfully. 
+

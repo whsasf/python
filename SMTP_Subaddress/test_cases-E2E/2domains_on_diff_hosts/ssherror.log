@@ -1,0 +1,24 @@
+ERROR: Unable to delete the mailbox
+Error Code: MXS_CONNECTION_ERROR
+Short Message: mOS Communication Error
+Long message: Read timed out
+imdbcontrol: LDAP Error executing command dd
+  ERROR  2000: LdapServAPIError(61/1) 66:
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+ERROR: Unable to delete the mailbox
+Error Code: MBX_NOT_FOUND
+Short Message: The given Mailbox does not exist.
+imdbcontrol: LDAP Error executing command dd
+  ERROR  2000: LdapServAPIError(61/1) 32:
+imdbcontrol: LDAP Error executing command cd
+  ERROR  2000: LdapServAPIError(61/1) 19:cannot change domainName attribute.
+ERROR: Unable to perform mailbox creation operation
+Error Code: MXS_CONNECTION_ERROR
+Short Message: mOS Communication Error
+Long message: Read timed out
+ERROR: Unable to delete the mailbox
+Error Code: MXS_CONNECTION_ERROR
+Short Message: mOS Communication Error
+Long message: Read timed out
