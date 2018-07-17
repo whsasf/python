@@ -1,0 +1,10 @@
+imservctrl: stopping mta (11270)
+imservctrl: cleaning /opt/imail/tmp ...
+mta -nosnmp
+imservctrl: starting mta -nosnmp
+imservctrl: starting /opt/imail/lib/mta -nosnmp > /opt/imail/tmp/mta.out 2>/opt/imail/tmp/mta.err &
+.imservctrl: done
+Please login as the user "op-user" rather than the user "root".
+
+Please login as the user "op-user" rather than the user "root".
+
