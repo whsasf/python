@@ -66,7 +66,7 @@ remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddres
 
 
 print ("---->Set subAddressAllowedIPs=[] ...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs="\'','10.49.58.147','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/inbound-standardmta-direct/mta/blockLocalNoAcct=false\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs="\'','10.49.58.147','root','letmein',0)
 
 #set relaySourcePolicy
 print ("---->Set  relaySourcePolicy=allowALL ...",end='')

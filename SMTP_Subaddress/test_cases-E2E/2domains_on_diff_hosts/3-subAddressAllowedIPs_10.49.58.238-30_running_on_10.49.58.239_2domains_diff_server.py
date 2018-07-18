@@ -63,7 +63,7 @@ print ("---->Set subAddressAllowedIPs=[] on dource mta ...",end='')
 remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.239\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.239\"\'','10.49.58.239','root','letmein',0)
 
 print ("---->Set subAddressAllowedIPs=10.49.58.238/30 on dest mta ...",end='')
-remote_operation('su - imail -c \'imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.238/30\n8.8.8.8\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.238/30\n8.8.8.8\"\'','10.49.58.147','root','letmein',0)
+remote_operation('su - imail -c \'imconfcontrol -install -key \"/inbound-standardmta-direct/mta/blockLocalNoAcct=false\";imconfcontrol -install -key \"/*/mta/subAddressAllowedIPs=10.49.58.238/30\n8.8.8.8\";imconfcontrol -install -key \"/site1-inbound-standardmta-direct/mta/subAddressAllowedIPs=10.49.58.238/30\n8.8.8.8\"\'','10.49.58.147','root','letmein',0)
 
 
 #set relaySourcePolicy
